@@ -16,6 +16,10 @@
 		324D1BD92718742B00517B99 /* Trip_PlannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324D1BD82718742B00517B99 /* Trip_PlannerTests.swift */; };
 		324D1BE42718742B00517B99 /* Trip_PlannerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324D1BE32718742B00517B99 /* Trip_PlannerUITests.swift */; };
 		324D1BF22718D65100517B99 /* Burlington-Vermont.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 324D1BF12718D65100517B99 /* Burlington-Vermont.jpg */; };
+		324D1BF4271B2E8800517B99 /* Boston.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 324D1BF3271B2E8800517B99 /* Boston.jpg */; };
+		324D1BF6271B2FF200517B99 /* Chicago.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 324D1BF5271B2FF200517B99 /* Chicago.jpg */; };
+		324D1BF8271B3D7C00517B99 /* New-York-City.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 324D1BF7271B3D7C00517B99 /* New-York-City.jpg */; };
+		324D1BFA271B3D8700517B99 /* Orlando.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 324D1BF9271B3D8700517B99 /* Orlando.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,10 @@
 		324D1BE32718742B00517B99 /* Trip_PlannerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trip_PlannerUITests.swift; sourceTree = "<group>"; };
 		324D1BE52718742B00517B99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		324D1BF12718D65100517B99 /* Burlington-Vermont.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Burlington-Vermont.jpg"; sourceTree = "<group>"; };
+		324D1BF3271B2E8800517B99 /* Boston.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Boston.jpg; sourceTree = "<group>"; };
+		324D1BF5271B2FF200517B99 /* Chicago.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Chicago.jpg; sourceTree = "<group>"; };
+		324D1BF7271B3D7C00517B99 /* New-York-City.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "New-York-City.jpg"; sourceTree = "<group>"; };
+		324D1BF9271B3D8700517B99 /* Orlando.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Orlando.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +114,10 @@
 				324D1BC5271873A400517B99 /* ViewController.swift */,
 				324D1BC7271873A400517B99 /* Main.storyboard */,
 				324D1BCA2718742900517B99 /* Assets.xcassets */,
+				324D1BF9271B3D8700517B99 /* Orlando.jpg */,
+				324D1BF7271B3D7C00517B99 /* New-York-City.jpg */,
+				324D1BF5271B2FF200517B99 /* Chicago.jpg */,
+				324D1BF3271B2E8800517B99 /* Boston.jpg */,
 				324D1BF12718D65100517B99 /* Burlington-Vermont.jpg */,
 				324D1BCC2718742900517B99 /* LaunchScreen.storyboard */,
 				324D1BCF2718742900517B99 /* Info.plist */,
@@ -236,8 +248,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				324D1BCE2718742900517B99 /* LaunchScreen.storyboard in Resources */,
+				324D1BFA271B3D8700517B99 /* Orlando.jpg in Resources */,
+				324D1BF8271B3D7C00517B99 /* New-York-City.jpg in Resources */,
 				324D1BF22718D65100517B99 /* Burlington-Vermont.jpg in Resources */,
 				324D1BCB2718742900517B99 /* Assets.xcassets in Resources */,
+				324D1BF4271B2E8800517B99 /* Boston.jpg in Resources */,
+				324D1BF6271B2FF200517B99 /* Chicago.jpg in Resources */,
 				324D1BC9271873A400517B99 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

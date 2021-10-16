@@ -12,14 +12,18 @@ class ViewController: UIViewController {
     // where do you want to go? label
     @IBOutlet var placesToGoLabel: UILabel!
     @IBOutlet var burlingtonButton: UIButton!
-    //override func viewDidLoad() {
-        //super.viewDidLoad()
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        //burlingtonButton.contentHorizontalAlignment = .fill
+        //burlingtonButton.contentVerticalAlignment = .fill
+        //burlingtonButton.imageView?.contentMode = .scaleAspectFill
+        burlingtonButton.titleLabel?.textAlignment = .center
         //burlingtonButton.frame.size = CGSize(width:100, height:50)
         //burlingtonButton.setBackgroundImage(UIImage(named: "Burlington-Vermont.jpg"), for: .normal)
         //burlingtonButton.layer.cornerRadius = burlingtonButton.frame.size.height/2
         //burlingtonButton.clipsToBounds = true
         //burlingtonButton.contentMode = UIView.ContentMode.center
-    //}
+    }
     // Burlington button
     @IBAction func burlingtonButtonAction(_ sender: UIButton) {
         

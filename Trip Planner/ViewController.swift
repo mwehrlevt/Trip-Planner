@@ -14,39 +14,31 @@ class ViewController: UIViewController {
     @IBOutlet var burlingtonButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        //burlingtonButton.contentHorizontalAlignment = .fill
-        //burlingtonButton.contentVerticalAlignment = .fill
-        //burlingtonButton.imageView?.contentMode = .scaleAspectFill
         burlingtonButton.titleLabel?.textAlignment = .center
-        //burlingtonButton.frame.size = CGSize(width:100, height:50)
-        //burlingtonButton.setBackgroundImage(UIImage(named: "Burlington-Vermont.jpg"), for: .normal)
-        //burlingtonButton.layer.cornerRadius = burlingtonButton.frame.size.height/2
-        //burlingtonButton.clipsToBounds = true
-        //burlingtonButton.contentMode = UIView.ContentMode.center
     }
     // Burlington button
     @IBAction func burlingtonButtonAction(_ sender: UIButton) {
-        
+        print("Burlington")
     }
     
     // Boston button
     @IBAction func bostonButtonAction(_ sender: UIButton) {
-        
+        print("Boston")
     }
     
     // Chicago button
     @IBAction func chicagoButtonAction(_ sender: UIButton) {
-        
+        print("Chicago")
     }
     
     // New York City button
     @IBAction func newYorkCityButtonAction(_ sender: UIButton) {
-        
+        print("New York City")
     }
     
     // Orlando button
     @IBAction func orlandoButtonAction(_ sender: UIButton) {
-        
+        print("Orlando")
     }
 }
 

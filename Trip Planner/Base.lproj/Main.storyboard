@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,109 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Trip_Planner" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZPO-3Z-dUH">
+                                <rect key="frame" x="16" y="112" width="343" height="48"/>
+                                <color key="backgroundColor" red="0.72687369589999995" green="0.82907098530000001" blue="0.94383537770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Burlington">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="burlingtonButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9h7-rL-q3D"/>
+                                    <action selector="burlingtonButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m4p-ck-UGS"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Where Would You Like to Explore?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ob-El-gx4">
+                                <rect key="frame" x="40" y="64" width="295" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v9B-s1-Rm6">
+                                <rect key="frame" x="16" y="168" width="343" height="48"/>
+                                <color key="backgroundColor" red="0.53529106744114552" green="0.65901385188293826" blue="0.94383537770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Boston">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="bostonButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dp8-d0-1Kv"/>
+                                    <action selector="bostonButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rxz-Ju-TJf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lyC-JG-eem">
+                                <rect key="frame" x="16" y="224" width="343" height="48"/>
+                                <color key="backgroundColor" red="0.7439602548409997" green="0.73684990340837231" blue="0.94383537770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Chicago">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="chicagoButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lHe-yy-QBq"/>
+                                    <action selector="chicagoButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FjP-6n-eqV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r2m-0h-IoW">
+                                <rect key="frame" x="17" y="336" width="343" height="48"/>
+                                <color key="backgroundColor" red="0.87543356008467421" green="0.64243195777499185" blue="0.94383537770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Orlando">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="orlandoButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="98F-mN-i7U"/>
+                                    <action selector="orlandoButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jdE-Yu-v0M"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jno-sr-tdG">
+                                <rect key="frame" x="18" y="280" width="343" height="48"/>
+                                <color key="backgroundColor" red="0.65436640732365925" green="0.58784459093520647" blue="0.94383537770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="New York City">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="newYorkCityButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1pv-Xk-qKx"/>
+                                    <action selector="newYorkCityButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i9Q-jR-I4l"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jno-sr-tdG" secondAttribute="trailing" constant="14" id="0qT-QV-h0f"/>
+                            <constraint firstItem="ZPO-3Z-dUH" firstAttribute="top" secondItem="3ob-El-gx4" secondAttribute="bottom" constant="24" id="2uz-dm-7ec"/>
+                            <constraint firstItem="jno-sr-tdG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="18" id="3nz-l4-QBf"/>
+                            <constraint firstItem="r2m-0h-IoW" firstAttribute="top" secondItem="jno-sr-tdG" secondAttribute="bottom" constant="8" id="7YI-O3-gY7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3ob-El-gx4" secondAttribute="trailing" constant="40" id="8Tv-YU-v92"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="r2m-0h-IoW" secondAttribute="trailing" constant="15" id="BlJ-fe-Nyj"/>
+                            <constraint firstItem="3ob-El-gx4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="64" id="Esm-CO-PXj"/>
+                            <constraint firstItem="v9B-s1-Rm6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="NF5-I2-W9x"/>
+                            <constraint firstItem="v9B-s1-Rm6" firstAttribute="top" secondItem="ZPO-3Z-dUH" secondAttribute="bottom" constant="8" id="PSP-IO-S4N"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lyC-JG-eem" secondAttribute="trailing" constant="16" id="QUv-sh-c74"/>
+                            <constraint firstItem="r2m-0h-IoW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="17" id="VHQ-th-LsC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="v9B-s1-Rm6" secondAttribute="trailing" constant="16" id="Wp5-YU-H0h"/>
+                            <constraint firstItem="ZPO-3Z-dUH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="aSR-zQ-1lO"/>
+                            <constraint firstItem="lyC-JG-eem" firstAttribute="top" secondItem="v9B-s1-Rm6" secondAttribute="bottom" constant="8" id="enn-M7-VOF"/>
+                            <constraint firstItem="3ob-El-gx4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="gN6-k6-AtC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZPO-3Z-dUH" secondAttribute="trailing" constant="16" id="lPJ-r6-Sr5"/>
+                            <constraint firstItem="lyC-JG-eem" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="lw5-1W-Lap"/>
+                            <constraint firstItem="jno-sr-tdG" firstAttribute="top" secondItem="lyC-JG-eem" secondAttribute="bottom" constant="8" id="zvw-Iq-jwA"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="burlingtonButton" destination="ZPO-3Z-dUH" id="nYn-F6-Bdq"/>
+                        <outlet property="placesToGoLabel" destination="3ob-El-gx4" id="lM6-YK-SEG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="138.40000000000001" y="98.50074962518741"/>
         </scene>
     </scenes>
 </document>

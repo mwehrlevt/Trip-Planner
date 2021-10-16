@@ -15,6 +15,7 @@
 		324D1BCE2718742900517B99 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 324D1BCC2718742900517B99 /* LaunchScreen.storyboard */; };
 		324D1BD92718742B00517B99 /* Trip_PlannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324D1BD82718742B00517B99 /* Trip_PlannerTests.swift */; };
 		324D1BE42718742B00517B99 /* Trip_PlannerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324D1BE32718742B00517B99 /* Trip_PlannerUITests.swift */; };
+		324D1BF22718D65100517B99 /* Burlington-Vermont.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 324D1BF12718D65100517B99 /* Burlington-Vermont.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		324D1BDF2718742B00517B99 /* Trip PlannerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Trip PlannerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		324D1BE32718742B00517B99 /* Trip_PlannerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trip_PlannerUITests.swift; sourceTree = "<group>"; };
 		324D1BE52718742B00517B99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		324D1BF12718D65100517B99 /* Burlington-Vermont.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Burlington-Vermont.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				324D1BC5271873A400517B99 /* ViewController.swift */,
 				324D1BC7271873A400517B99 /* Main.storyboard */,
 				324D1BCA2718742900517B99 /* Assets.xcassets */,
+				324D1BF12718D65100517B99 /* Burlington-Vermont.jpg */,
 				324D1BCC2718742900517B99 /* LaunchScreen.storyboard */,
 				324D1BCF2718742900517B99 /* Info.plist */,
 			);
@@ -233,6 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				324D1BCE2718742900517B99 /* LaunchScreen.storyboard in Resources */,
+				324D1BF22718D65100517B99 /* Burlington-Vermont.jpg in Resources */,
 				324D1BCB2718742900517B99 /* Assets.xcassets in Resources */,
 				324D1BC9271873A400517B99 /* Main.storyboard in Resources */,
 			);

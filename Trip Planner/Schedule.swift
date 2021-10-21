@@ -7,3 +7,24 @@
 //
 
 import Foundation
+import UIKit
+
+class Schedule {
+    
+    var schedule = [ScheduleElement]()
+    
+    init() {
+        for _ in 0...4 {
+            createEvent()
+        }
+    }
+    
+    @discardableResult func createEvent() -> ScheduleElement {
+        let newEvent = ScheduleElement(random: true)
+        
+        schedule.append(newEvent)
+        
+        return newEvent
+    }
+    
+}

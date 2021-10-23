@@ -20,6 +20,10 @@
 		324D1BF6271B2FF200517B99 /* Chicago.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 324D1BF5271B2FF200517B99 /* Chicago.jpg */; };
 		324D1BF8271B3D7C00517B99 /* New-York-City.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 324D1BF7271B3D7C00517B99 /* New-York-City.jpg */; };
 		324D1BFA271B3D8700517B99 /* Orlando.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 324D1BF9271B3D8700517B99 /* Orlando.jpg */; };
+		5220EB0A27208B1A00E8350A /* Schedule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5220EB0927208B1A00E8350A /* Schedule.storyboard */; };
+		5220EB0C27208EE100E8350A /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5220EB0B27208EE100E8350A /* ScheduleViewController.swift */; };
+		5220EB0E27208F3B00E8350A /* ScheduleElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5220EB0D27208F3B00E8350A /* ScheduleElement.swift */; };
+		5220EB102720930B00E8350A /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5220EB0F2720930B00E8350A /* Schedule.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +63,10 @@
 		324D1BF5271B2FF200517B99 /* Chicago.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Chicago.jpg; sourceTree = "<group>"; };
 		324D1BF7271B3D7C00517B99 /* New-York-City.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "New-York-City.jpg"; sourceTree = "<group>"; };
 		324D1BF9271B3D8700517B99 /* Orlando.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Orlando.jpg; sourceTree = "<group>"; };
+		5220EB0927208B1A00E8350A /* Schedule.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Schedule.storyboard; sourceTree = "<group>"; };
+		5220EB0B27208EE100E8350A /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
+		5220EB0D27208F3B00E8350A /* ScheduleElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleElement.swift; sourceTree = "<group>"; };
+		5220EB0F2720930B00E8350A /* Schedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +121,10 @@
 				324D1BC3271873A400517B99 /* SceneDelegate.swift */,
 				324D1BC5271873A400517B99 /* ViewController.swift */,
 				324D1BC7271873A400517B99 /* Main.storyboard */,
+				5220EB0927208B1A00E8350A /* Schedule.storyboard */,
+				5220EB0B27208EE100E8350A /* ScheduleViewController.swift */,
+				5220EB0D27208F3B00E8350A /* ScheduleElement.swift */,
+				5220EB0F2720930B00E8350A /* Schedule.swift */,
 				324D1BCA2718742900517B99 /* Assets.xcassets */,
 				324D1BF9271B3D8700517B99 /* Orlando.jpg */,
 				324D1BF7271B3D7C00517B99 /* New-York-City.jpg */,
@@ -249,6 +261,7 @@
 			files = (
 				324D1BCE2718742900517B99 /* LaunchScreen.storyboard in Resources */,
 				324D1BFA271B3D8700517B99 /* Orlando.jpg in Resources */,
+				5220EB0A27208B1A00E8350A /* Schedule.storyboard in Resources */,
 				324D1BF8271B3D7C00517B99 /* New-York-City.jpg in Resources */,
 				324D1BF22718D65100517B99 /* Burlington-Vermont.jpg in Resources */,
 				324D1BCB2718742900517B99 /* Assets.xcassets in Resources */,
@@ -279,9 +292,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5220EB102720930B00E8350A /* Schedule.swift in Sources */,
 				324D1BC6271873A400517B99 /* ViewController.swift in Sources */,
 				324D1BC2271873A400517B99 /* AppDelegate.swift in Sources */,
 				324D1BC4271873A400517B99 /* SceneDelegate.swift in Sources */,
+				5220EB0C27208EE100E8350A /* ScheduleViewController.swift in Sources */,
+				5220EB0E27208F3B00E8350A /* ScheduleElement.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -13,13 +13,22 @@ struct ActivityRow: View {
     
     var body: some View {
         HStack {
+            activity.image
+                .resizable()
+                .frame(width: 50, height: 50)
             Text(activity.id)
+            
+            Spacer()
         }
     }
 }
 
 struct ActivityRow_Previews: PreviewProvider {
     static var previews: some View {
-        ActivityRow(activity: activities[1])
+        Group {
+            ActivityRow(activity: activities[0])
+            ActivityRow(activity: activities[1])
+        }
+        .previewLayout(.fixed(width: 300, height: 70))
     }
 }

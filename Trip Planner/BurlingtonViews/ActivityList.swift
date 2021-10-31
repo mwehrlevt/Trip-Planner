@@ -10,8 +10,13 @@ import SwiftUI
 
 struct ActivityList: View {
     var body: some View {
-        List(activities) { activity in
-            ActivityRow(activity: activity)
+        NavigationView {
+            List(activities) { activity in
+                NavigationLink(destination: ActivityDetail(activity: activity)) {
+                    ActivityRow(activity: activity)
+                }
+            }
+            .navigationBarTitle("Burlington Activities")
         }
     }
 }

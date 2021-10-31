@@ -119,6 +119,7 @@
                                                 </state>
                                                 <connections>
                                                     <action selector="burlingtonButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m4p-ck-UGS"/>
+                                                    <segue destination="Zja-fz-gV9" kind="show" id="TJ1-e7-IYY"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v9B-s1-Rm6">
@@ -232,6 +233,34 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1522" y="1112"/>
+        </scene>
+        <!--Burlington View Controller-->
+        <scene sceneID="8EI-rw-rtg">
+            <objects>
+                <viewController id="Zja-fz-gV9" customClass="BurlingtonViewController" customModule="Trip_Planner" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NkO-xt-NEt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qjN-Pj-MZC">
+                                <rect key="frame" x="0.0" y="44" width="375" height="574"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="g55-Hz-0Cl" firstAttribute="trailing" secondItem="qjN-Pj-MZC" secondAttribute="trailing" id="JYa-yK-Rka"/>
+                            <constraint firstItem="g55-Hz-0Cl" firstAttribute="bottom" secondItem="qjN-Pj-MZC" secondAttribute="bottom" id="MBp-aI-3zW"/>
+                            <constraint firstItem="qjN-Pj-MZC" firstAttribute="top" secondItem="g55-Hz-0Cl" secondAttribute="top" id="aRw-hf-u79"/>
+                            <constraint firstItem="qjN-Pj-MZC" firstAttribute="leading" secondItem="g55-Hz-0Cl" secondAttribute="leading" id="bDs-xG-W6I"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="g55-Hz-0Cl"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="TwV-An-weP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GqL-py-moo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2566" y="1850"/>
         </scene>
     </scenes>
     <resources>

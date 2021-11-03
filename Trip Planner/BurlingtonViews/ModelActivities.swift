@@ -8,7 +8,7 @@
 
 import Foundation
 
-var activities: [Activity] = load("burlingtonData.json")
+var activities: [Activity] = load("BurlingtonActivities.json")
 
 // fetches the json data
 func load<T: Decodable>(_ filename: String) -> T {

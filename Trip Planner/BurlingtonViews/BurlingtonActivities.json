@@ -1,0 +1,35 @@
+[
+    {
+        "id": "Shelburne Museum",
+        "category": "Cultural",
+    "cost": "$25.00",
+        "location": "6000 Shelburne Rd, Shelburne, VT 05482",
+        "coordinates": {
+            "longitude": 44.3733,
+            "latitude": 73.2323
+        },
+        "imageName": "shelburneMuseum"
+    },
+    {
+        "id": "The Skinny Pancake",
+        "category": "Food",
+        "cost": "$$",
+        "location": "60 Lake St, Burlington, VT 05401",
+        "coordinates": {
+            "longitude": 44.477120,
+            "latitude": -73.219324
+        },
+        "imageName": "skinnyPancake"
+    },
+    {
+        "id": "World's Tallest Filing Cabinet",
+        "category": "Landmark",
+        "cost": "Free",
+        "location": "208 Flynn Ave, Burlington, VT 05401",
+        "coordinates": {
+            "longitude": -135.334571,
+            "latitude": 59.560551
+        },
+        "imageName": "filingCabinet"
+    }
+]

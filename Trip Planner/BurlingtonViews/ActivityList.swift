@@ -26,11 +26,20 @@ var landmarkActivities: [Activity] {
     }
 }
 
+var natureActivities: [Activity] {
+    activities.filter { activity in
+        (activity.category == "Nature")
+    }
+}
+
+var entertainmentActivities: [Activity] {
+    activities.filter { activity in
+        (activity.category == "Entertainment")
+    }
+}
+
 struct ActivityList: View {
     // all the categories array
-    
-    //var allCategories:[[Activity]] = [foodActivities, culturalActivities]
-    
     var CategoriesData = [
         Category(
             title: "Food",
@@ -43,6 +52,14 @@ struct ActivityList: View {
         Category(
             title: "Landmark",
             activitiesArray: landmarkActivities
+        ),
+        Category(
+            title: "Nature",
+            activitiesArray: natureActivities
+        ),
+        Category(
+            title: "Entertainment",
+            activitiesArray: entertainmentActivities
         )
     ]
 
@@ -62,17 +79,6 @@ struct ActivityList: View {
             .navigationBarTitle("Burlington Activities")
         }
     }
-    
-    /*var body: some View {
-        NavigationView {
-            List(activities) { activity in
-                NavigationLink(destination: ActivityDetail(activity: activity)) {
-                    ActivityRow(activity: activity)
-                }
-            }
-            .navigationBarTitle("Burlington Activities")
-        }
-    }*/
 }
 
 struct ActivityList_Previews: PreviewProvider {

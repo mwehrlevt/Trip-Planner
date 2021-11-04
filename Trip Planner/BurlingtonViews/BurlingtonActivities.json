@@ -53,5 +53,115 @@
             "latitude": 59.560551
         },
         "imageName": "echo"
+    },
+    {
+        "id": "Apple Picking at Shelburne Orchards",
+        "category": "Food",
+        "cost": "$10-30",
+        "location": "216 Orchard Rd, Shelburne, VT 05482",
+        "coordinates": {
+            "longitude": -135.334571,
+            "latitude": 59.560551
+        },
+        "imageName": "shelburneOrchards"
+    },
+    {
+        "id": "Burlington Greenway",
+        "category": "Nature",
+        "cost": "Free",
+        "location": "1 College St, Burlington, VT 05401",
+        "coordinates": {
+            "longitude": -135.334571,
+            "latitude": 59.560551
+        },
+        "imageName": "greenway"
+    },
+    {
+        "id": "Foam Brewers",
+        "category": "Food",
+        "cost": "$$",
+        "location": "112 Lake St, Burlington, VT 05401",
+        "coordinates": {
+            "longitude": -135.334571,
+            "latitude": 59.560551
+        },
+        "imageName": "foamBrewers"
+    },
+    {
+        "id": "Colchester Causeway",
+        "category": "Nature",
+        "cost": "Free",
+        "location": "781 Blakely Rd, Colchester, VT 05446",
+        "coordinates": {
+            "longitude": -135.334571,
+            "latitude": 59.560551
+        },
+        "imageName": "colchesterCauseway"
+    },
+    {
+        "id": "Battery Park",
+        "category": "Nature",
+        "cost": "Free",
+        "location": "1 North Ave, Burlington, VT 05401",
+        "coordinates": {
+            "longitude": -135.334571,
+            "latitude": 59.560551
+        },
+        "imageName": "batteryPark"
+    },
+    {
+        "id": "Citizen Cider",
+        "category": "Food",
+        "cost": "$$",
+        "location": "316 Pine St #144, Burlington, VT 05401",
+        "coordinates": {
+            "longitude": -135.334571,
+            "latitude": 59.560551
+        },
+        "imageName": "citizenCider"
+    },
+    {
+        "id": "Hiking Mount Philo",
+        "category": "Nature",
+        "cost": "$4 per person",
+        "location": "5425 Humphreys Rd, Charlotte, VT 05445",
+        "coordinates": {
+            "longitude": -135.334571,
+            "latitude": 59.560551
+        },
+        "imageName": "mountPhilo"
+    },
+    {
+        "id": "Flynn Center for the Performing Arts",
+        "category": "Entertainment",
+        "cost": "$$",
+        "location": "153 Main St, Burlington, VT 05401",
+        "coordinates": {
+            "longitude": -135.334571,
+            "latitude": 59.560551
+        },
+        "imageName": "flynn"
+    },
+    {
+        "id": "Burlington Farmers Market",
+        "category": "Entertainment",
+        "cost": "$",
+        "location": "345 Pine St, Burlington, VT 05401",
+        "coordinates": {
+            "longitude": -135.334571,
+            "latitude": 59.560551
+        },
+        "imageName": "farmersMarket"
+    },
+    {
+        "id": "Burlington City Arts Center",
+        "category": "Entertainment",
+        "cost": "Free",
+        "location": "135 Church St, Burlington, VT 05401",
+        "coordinates": {
+            "longitude": -135.334571,
+            "latitude": 59.560551
+        },
+        "imageName": "cityArtsCenter"
     }
 ]

@@ -31,5 +31,27 @@
             "latitude": 59.560551
         },
         "imageName": "filingCabinet"
+    },
+    {
+        "id": "Ben & Jerry's",
+        "category": "Food",
+        "cost": "$",
+        "location": "36 Church Street, Burlington, VT 05401",
+        "coordinates": {
+            "longitude": -135.334571,
+            "latitude": 59.560551
+        },
+        "imageName": "benAndJerrys"
+    },
+    {
+        "id": "Echo, Leahy Center for Lake Champlain",
+        "category": "Cultural",
+        "cost": "$5",
+        "location": "1 College St, Burlington, VT 05401",
+        "coordinates": {
+            "longitude": -135.334571,
+            "latitude": 59.560551
+        },
+        "imageName": "echo"
     }
 ]

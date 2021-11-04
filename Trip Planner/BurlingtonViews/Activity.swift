@@ -36,3 +36,17 @@ struct Activity: Hashable, Codable, Identifiable {
         var longitude: Double
     }
 }
+
+struct Category: Identifiable {
+    var id = UUID()
+    var title: String
+    var activitiesArray: [Activity]
+}
+
+var CategoriesData = [
+    Category(
+        title: "Food",
+        activitiesArray: [
+        ]
+    )
+]

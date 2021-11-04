@@ -7,95 +7,94 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Tab Bar Controller-->
+        <!--budget-->
         <scene sceneID="rjp-Ub-K5H">
             <objects>
-                <tabBarController id="lvr-fN-y0r" sceneMemberID="viewController">
+                <tabBarController title="budget" id="lvr-fN-y0r" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Fr1-P9-Fc8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="uz6-hG-hdz" kind="relationship" relationship="viewControllers" id="OkI-ta-5HQ"/>
-                        <segue destination="mzL-lw-go4" kind="relationship" relationship="viewControllers" id="v8o-zk-8kP"/>
-                        <segue destination="qd3-vo-qnz" kind="relationship" relationship="viewControllers" id="K9s-m1-4MT"/>
-                        <segue destination="WP4-PE-QUU" kind="relationship" relationship="viewControllers" id="glb-dg-60W"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="P2b-Rk-rN3"/>
+                        <segue destination="aOI-wD-1qJ" kind="relationship" relationship="viewControllers" id="7R2-la-acu"/>
+                        <segue destination="uye-0s-yX7" kind="relationship" relationship="viewControllers" id="wuI-R4-ZFa"/>
+                        <segue destination="n6k-5b-qKd" kind="relationship" relationship="viewControllers" id="d9v-bE-CmN"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZFG-Fm-zkD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-12" y="-640"/>
         </scene>
-        <!--Budget-->
-        <scene sceneID="ZdX-S1-iCo">
-            <objects>
-                <navigationController id="WP4-PE-QUU" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Budget" image="dollarsign.circle" catalog="system" id="g9B-jl-J81"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="JnU-QG-sia">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="PZA-ig-RxE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1223" y="163"/>
-        </scene>
-        <!--Map-->
-        <scene sceneID="xRG-Pv-b1X">
-            <objects>
-                <navigationController id="mzL-lw-go4" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Map" image="map" catalog="system" id="Hoj-ev-B0X"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="mQ2-Zi-oeq">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="uxb-i7-QHt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-511" y="165"/>
-        </scene>
         <!--Scheduler-->
-        <scene sceneID="hGH-rr-1JD">
+        <scene sceneID="kWq-JK-ibi">
             <objects>
-                <navigationController id="qd3-vo-qnz" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Scheduler" image="calendar" catalog="system" id="wRz-bj-kKp"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="HAl-Tb-Hkq">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="kzc-kz-A62" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController title="Scheduler" id="uye-0s-yX7" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qpI-EG-i1o">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scheduler" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YYF-4E-WeU">
+                                <rect key="frame" x="143" y="43" width="89" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="tgb-xc-laU" firstAttribute="trailing" secondItem="YYF-4E-WeU" secondAttribute="trailing" constant="143" id="88F-9g-qa8"/>
+                            <constraint firstItem="YYF-4E-WeU" firstAttribute="top" secondItem="tgb-xc-laU" secondAttribute="top" constant="43" id="MIA-CT-skd"/>
+                            <constraint firstItem="YYF-4E-WeU" firstAttribute="leading" secondItem="tgb-xc-laU" secondAttribute="leading" constant="143" id="ocE-4w-BoR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="tgb-xc-laU"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Scheduler" image="calendar" catalog="system" id="kjj-5f-5bQ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bM6-XK-FHy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="390" y="164"/>
+            <point key="canvasLocation" x="378" y="162"/>
+        </scene>
+        <!--Budget-->
+        <scene sceneID="gaD-8E-GGR">
+            <objects>
+                <viewController title="Budget" id="n6k-5b-qKd" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2W5-Q5-m3S">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Budget" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AFL-m5-RqC">
+                                <rect key="frame" x="155" y="48" width="64" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="AFL-m5-RqC" firstAttribute="leading" secondItem="eUY-pl-ywW" secondAttribute="leading" constant="155" id="Zkb-gJ-sY2"/>
+                            <constraint firstItem="eUY-pl-ywW" firstAttribute="trailing" secondItem="AFL-m5-RqC" secondAttribute="trailing" constant="156" id="ain-GO-DAG"/>
+                            <constraint firstItem="AFL-m5-RqC" firstAttribute="top" secondItem="eUY-pl-ywW" secondAttribute="top" constant="48" id="jrs-n5-Rb1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="eUY-pl-ywW"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Budget" image="dollarsign.circle" catalog="system" id="xMT-yJ-n91"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b2m-S1-H61" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1240" y="154"/>
         </scene>
         <!--Home-->
-        <scene sceneID="ePr-WE-gfO">
-            <objects>
-                <navigationController id="uz6-hG-hdz" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" image="house.fill" catalog="system" id="7uD-SQ-FkJ"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="oPD-lp-ore">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="fWZ-Sa-Pnq"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ZsI-pN-bxS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1521" y="164"/>
-        </scene>
-        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Trip_Planner" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Home" id="BYZ-38-t0r" customClass="ViewController" customModule="Trip_Planner" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fPO-Ip-zmY">
-                                <rect key="frame" x="0.0" y="44" width="375" height="907"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="951"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RNc-ez-eD0" userLabel="ContentView">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
@@ -223,6 +222,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" id="CqE-4Y-zqg"/>
                     <navigationItem key="navigationItem" id="lbi-XJ-esU"/>
                     <size key="freeformSize" width="375" height="1000"/>
                     <connections>
@@ -232,18 +232,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1522" y="1112"/>
+            <point key="canvasLocation" x="-1503" y="313"/>
         </scene>
         <!--Burlington View Controller-->
         <scene sceneID="8EI-rw-rtg">
             <objects>
                 <viewController id="Zja-fz-gV9" customClass="BurlingtonViewController" customModule="Trip_Planner" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NkO-xt-NEt">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qjN-Pj-MZC">
-                                <rect key="frame" x="0.0" y="44" width="375" height="574"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </view>
                         </subviews>
@@ -260,7 +260,36 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GqL-py-moo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2566" y="1850"/>
+            <point key="canvasLocation" x="-1503" y="1219"/>
+        </scene>
+        <!--Map-->
+        <scene sceneID="UkF-NA-Xae">
+            <objects>
+                <viewController title="Map" id="aOI-wD-1qJ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4mc-S1-qmV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Map" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vai-4n-FHY">
+                                <rect key="frame" x="168" y="40" width="39" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="xZf-bg-cJv" firstAttribute="trailing" secondItem="Vai-4n-FHY" secondAttribute="trailing" constant="168" id="0Rg-Fq-Ijd"/>
+                            <constraint firstItem="Vai-4n-FHY" firstAttribute="leading" secondItem="xZf-bg-cJv" secondAttribute="leading" constant="168" id="a1z-hU-EKt"/>
+                            <constraint firstItem="Vai-4n-FHY" firstAttribute="top" secondItem="xZf-bg-cJv" secondAttribute="top" constant="40" id="wz8-MI-i91"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="xZf-bg-cJv"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="map" image="map" catalog="system" id="hcm-Pc-7SE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NJ4-hy-fGt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-591" y="163"/>
         </scene>
     </scenes>
     <resources>
@@ -271,7 +300,7 @@
         <image name="Orlando.jpg" width="651.5999755859375" height="434.39999389648438"/>
         <image name="calendar" catalog="system" width="64" height="52"/>
         <image name="dollarsign.circle" catalog="system" width="64" height="60"/>
-        <image name="house.fill" catalog="system" width="64" height="52"/>
+        <image name="house" catalog="system" width="64" height="54"/>
         <image name="map" catalog="system" width="64" height="56"/>
     </resources>
 </document>

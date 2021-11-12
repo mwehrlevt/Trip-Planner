@@ -10,20 +10,26 @@ import SwiftUI
 
 struct ActivityDetail: View {
     var activity: Activity
+    @State private var activityDate = Date()
     
     var body: some View {
         ScrollView {
             VStack {
-                activity.image
-                    .resizable()
-                    .scaledToFit()
-                    //.frame(width: 50, height: 50)
-                
                 VStack(alignment: .leading) {
                     Text(activity.id)
                         .font(.title)
                         .foregroundColor(.primary)
                 }
+                activity.image
+                    .resizable()
+                    .scaledToFit()
+                    //.frame(width: 50, height: 50)
+                
+                /*VStack(alignment: .leading) {
+                    Text(activity.id)
+                        .font(.title)
+                        .foregroundColor(.primary)
+                }*/
                 HStack {
                     Text(activity.category)
                     Spacer()
@@ -35,8 +41,15 @@ struct ActivityDetail: View {
                 Divider()
                 
                 Text(activity.location)
+                
             }
-            .padding()
+            //.padding()
+            /*Form {
+                DatePicker("Activity Date", selection: $activityDate, in: Date()...)
+                    //.datePickerStyle(WheelDatePickerStyle())
+                    //.padding()
+                    //.frame(width:150, height: 100, alignment: .center)
+            }*/
         }
     }
 }

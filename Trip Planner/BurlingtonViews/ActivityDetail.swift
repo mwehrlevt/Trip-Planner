@@ -10,6 +10,8 @@ import SwiftUI
 
 struct ActivityDetail: View {
     var activity: Activity
+    let cityName = "Burlington"
+    @State private var activities: [ActivitiesChosen] = [ActivitiesChosen]()
     
     //let persistenceController = PersistenceController.shared
     let persistenceController: PersistenceController
@@ -18,6 +20,11 @@ struct ActivityDetail: View {
     @Environment(\.managedObjectContext) private var viewContent
     
     @State private var activityDate = Date()
+    
+    private func populateActivities() {
+        activities = persistenceController.getAllActivities()
+        print(activities[0].city)
+    }
     
     var body: some View {
         /*ScrollView {
@@ -100,7 +107,9 @@ struct ActivityDetail: View {
                 })*/
             Button("Add Activity") {
                 print("Added activity")
-                self.persistenceController.save(activityName: self.activity.id)
+                self.persistenceController.save(activityName: self.activity.id, city: self.cityName, date: self.activityDate, price: self.activity.cost)
+                // make sure activity was saved
+                self.populateActivities()
             }
         }
     }

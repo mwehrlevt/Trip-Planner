@@ -17,7 +17,7 @@ struct PersistenceController {
     let container: NSPersistentContainer
     
     // initializer to load Core Data
-    init(inMemory: Bool = false) {
+    /*init(inMemory: Bool = false) {
         container = NSPersistentContainer(name: "ActivitesData")
         
         if inMemory {
@@ -27,6 +27,15 @@ struct PersistenceController {
         container.loadPersistentStores { description, error in
             if let error = error {
                 fatalError("Error: \(error.localizedDescription)")
+            }
+        }
+    }*/
+    
+    init() {
+        container = NSPersistentContainer(name: "ActivitesData")
+        container.loadPersistentStores { (description, error) in
+            if let error = error {
+                fatalError("Core Data Store Failed \(error.localizedDescription)")
             }
         }
     }
@@ -42,8 +51,13 @@ struct PersistenceController {
     }
     
     // save data
-    func save(activityName: String) {
+    func save(activityName: String, city: String, date: Date, price: String) {
         let context = container.viewContext
+        let activity = ActivitiesChosen(context: container.viewContext)
+        activity.activityName = activityName
+        activity.city = city
+        activity.date = date
+        activity.price = price
         
         if context.hasChanges {
             do {
@@ -52,6 +66,16 @@ struct PersistenceController {
                 print("Failed to save activity")
             }
         }
+    }
+}
+
+
+// used to fix core data bug
+public extension NSManagedObject {
+    convenience init(context: NSManagedObjectContext) {
+        let name = String(describing: type(of: self))
+        let entity = NSEntityDescription.entity(forEntityName: name, in: context)!
+        self.init(entity: entity, insertInto: context)
     }
 }
 

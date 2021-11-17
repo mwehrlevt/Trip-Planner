@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		322FD8F42741DD36004B9CAE /* ActivitesData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 322FD8F22741DD35004B9CAE /* ActivitesData.xcdatamodeld */; };
+		322FD8F62741DE58004B9CAE /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322FD8F52741DE58004B9CAE /* PersistenceController.swift */; };
 		324D1BC2271873A400517B99 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324D1BC1271873A400517B99 /* AppDelegate.swift */; };
 		324D1BC4271873A400517B99 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324D1BC3271873A400517B99 /* SceneDelegate.swift */; };
 		324D1BC6271873A400517B99 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324D1BC5271873A400517B99 /* ViewController.swift */; };
@@ -52,6 +54,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		322FD8F32741DD36004B9CAE /* ActivitesData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ActivitesData.xcdatamodel; sourceTree = "<group>"; };
+		322FD8F52741DE58004B9CAE /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
 		324D1BBE271873A300517B99 /* Trip Planner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Trip Planner.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		324D1BC1271873A400517B99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		324D1BC3271873A400517B99 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -135,6 +139,7 @@
 			children = (
 				325D4F64272F357F00146788 /* BurlingtonViews */,
 				324D1BC1271873A400517B99 /* AppDelegate.swift */,
+				322FD8F22741DD35004B9CAE /* ActivitesData.xcdatamodeld */,
 				324D1BC3271873A400517B99 /* SceneDelegate.swift */,
 				324D1BC5271873A400517B99 /* ViewController.swift */,
 				324D1BC7271873A400517B99 /* Main.storyboard */,
@@ -151,6 +156,7 @@
 				324D1BF12718D65100517B99 /* Burlington-Vermont.jpg */,
 				324D1BCC2718742900517B99 /* LaunchScreen.storyboard */,
 				324D1BCF2718742900517B99 /* Info.plist */,
+				322FD8F52741DE58004B9CAE /* PersistenceController.swift */,
 			);
 			path = "Trip Planner";
 			sourceTree = "<group>";
@@ -326,6 +332,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				322FD8F42741DD36004B9CAE /* ActivitesData.xcdatamodeld in Sources */,
+				322FD8F62741DE58004B9CAE /* PersistenceController.swift in Sources */,
 				325D4F66272F35D600146788 /* ActivityList.swift in Sources */,
 				5220EB102720930B00E8350A /* Schedule.swift in Sources */,
 				324D1BC6271873A400517B99 /* ViewController.swift in Sources */,
@@ -660,6 +668,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		322FD8F22741DD35004B9CAE /* ActivitesData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				322FD8F32741DD36004B9CAE /* ActivitesData.xcdatamodel */,
+			);
+			currentVersion = 322FD8F32741DD36004B9CAE /* ActivitesData.xcdatamodel */;
+			path = ActivitesData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 324D1BB6271873A200517B99 /* Project object */;
 }

@@ -15,7 +15,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         burlingtonButton.titleLabel?.textAlignment = .center
-        //self.navigationItem.setHidesBackButton(true, animated: false)
     }
     // Burlington button
     @IBAction func burlingtonButtonAction(_ sender: UIButton) {

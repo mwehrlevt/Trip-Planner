@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1DEF2AFD2746AB850004E699 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DEF2AFC2746AB850004E699 /* MapViewController.swift */; };
+		1D07886A2746AEA400F5E29E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0788692746AEA400F5E29E /* MapViewController.swift */; };
 		322FD8F42741DD36004B9CAE /* ActivitesData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 322FD8F22741DD35004B9CAE /* ActivitesData.xcdatamodeld */; };
 		322FD8F62741DE58004B9CAE /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322FD8F52741DE58004B9CAE /* PersistenceController.swift */; };
 		324D1BC2271873A400517B99 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324D1BC1271873A400517B99 /* AppDelegate.swift */; };
@@ -54,7 +54,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1DEF2AFC2746AB850004E699 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MapViewController.swift; path = ../MapViewController.swift; sourceTree = "<group>"; };
+		1D0788692746AEA400F5E29E /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		322FD8F32741DD36004B9CAE /* ActivitesData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ActivitesData.xcdatamodel; sourceTree = "<group>"; };
 		322FD8F52741DE58004B9CAE /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
 		324D1BBE271873A300517B99 /* Trip Planner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Trip Planner.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -147,7 +147,6 @@
 				5220EB0B27208EE100E8350A /* ScheduleViewController.swift */,
 				5220EB0D27208F3B00E8350A /* ScheduleElement.swift */,
 				5220EB0F2720930B00E8350A /* Schedule.swift */,
-				1DEF2AFC2746AB850004E699 /* MapViewController.swift */,
 				324D1BCA2718742900517B99 /* Assets.xcassets */,
 				324D1BF9271B3D8700517B99 /* Orlando.jpg */,
 				324D1BF7271B3D7C00517B99 /* New-York-City.jpg */,
@@ -157,6 +156,7 @@
 				324D1BCC2718742900517B99 /* LaunchScreen.storyboard */,
 				324D1BCF2718742900517B99 /* Info.plist */,
 				322FD8F52741DE58004B9CAE /* PersistenceController.swift */,
+				1D0788692746AEA400F5E29E /* MapViewController.swift */,
 			);
 			path = "Trip Planner";
 			sourceTree = "<group>";
@@ -344,7 +344,7 @@
 				325D4F5F272F292600146788 /* ModelActivities.swift in Sources */,
 				325D4F5D272F276E00146788 /* Activity.swift in Sources */,
 				325D4F6A272F379500146788 /* BurlingtonView.swift in Sources */,
-				1DEF2AFD2746AB850004E699 /* MapViewController.swift in Sources */,
+				1D07886A2746AEA400F5E29E /* MapViewController.swift in Sources */,
 				5220EB0E27208F3B00E8350A /* ScheduleElement.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

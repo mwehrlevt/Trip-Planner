@@ -23,6 +23,13 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let annotation = MKPointAnnotation()
+        annotation.coordinate = CLLocationCoordinate2D(latitude: 44.4770450620134, longitude: -73.21970740929945)
+        mMapView.addAnnotation(annotation)
+        
+        let region = MKCoordinateRegion(center: annotation.coordinate, latitudinalMeters: 1000, longitudinalMeters: 1000)
+        mMapView.setRegion(region, animated: true)
     }
 
     override func viewDidAppear(_ animated: Bool) {

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D07886C2746B06500F5E29E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D07886B2746B06500F5E29E /* MapViewController.swift */; };
 		322FD8F42741DD36004B9CAE /* ActivitesData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 322FD8F22741DD35004B9CAE /* ActivitesData.xcdatamodeld */; };
 		322FD8F62741DE58004B9CAE /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322FD8F52741DE58004B9CAE /* PersistenceController.swift */; };
 		324D1BC2271873A400517B99 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324D1BC1271873A400517B99 /* AppDelegate.swift */; };
@@ -25,7 +26,6 @@
 		325D4F5B272F206F00146788 /* ActivityRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325D4F5A272F206F00146788 /* ActivityRow.swift */; };
 		325D4F5D272F276E00146788 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325D4F5C272F276E00146788 /* Activity.swift */; };
 		325D4F5F272F292600146788 /* ModelActivities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325D4F5E272F292600146788 /* ModelActivities.swift */; };
-		325D4F61272F2F7F00146788 /* filingCabinet.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 325D4F60272F2F7F00146788 /* filingCabinet.jpg */; };
 		325D4F66272F35D600146788 /* ActivityList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325D4F65272F35D600146788 /* ActivityList.swift */; };
 		325D4F68272F372600146788 /* ActivityDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325D4F67272F372600146788 /* ActivityDetail.swift */; };
 		325D4F6A272F379500146788 /* BurlingtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325D4F69272F379500146788 /* BurlingtonView.swift */; };
@@ -54,6 +54,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1D07886B2746B06500F5E29E /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MapViewController.swift; path = BurlingtonViews/MapViewController.swift; sourceTree = "<group>"; };
 		322FD8F32741DD36004B9CAE /* ActivitesData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ActivitesData.xcdatamodel; sourceTree = "<group>"; };
 		322FD8F52741DE58004B9CAE /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
 		324D1BBE271873A300517B99 /* Trip Planner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Trip Planner.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,7 +79,6 @@
 		325D4F5A272F206F00146788 /* ActivityRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityRow.swift; sourceTree = "<group>"; };
 		325D4F5C272F276E00146788 /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		325D4F5E272F292600146788 /* ModelActivities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelActivities.swift; sourceTree = "<group>"; };
-		325D4F60272F2F7F00146788 /* filingCabinet.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = filingCabinet.jpg; path = ../../../Downloads/filingCabinet.jpg; sourceTree = "<group>"; };
 		325D4F65272F35D600146788 /* ActivityList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityList.swift; sourceTree = "<group>"; };
 		325D4F67272F372600146788 /* ActivityDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityDetail.swift; sourceTree = "<group>"; };
 		325D4F69272F379500146788 /* BurlingtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BurlingtonView.swift; sourceTree = "<group>"; };
@@ -140,6 +140,7 @@
 				325D4F64272F357F00146788 /* BurlingtonViews */,
 				324D1BC1271873A400517B99 /* AppDelegate.swift */,
 				322FD8F22741DD35004B9CAE /* ActivitesData.xcdatamodeld */,
+				1D07886B2746B06500F5E29E /* MapViewController.swift */,
 				324D1BC3271873A400517B99 /* SceneDelegate.swift */,
 				324D1BC5271873A400517B99 /* ViewController.swift */,
 				324D1BC7271873A400517B99 /* Main.storyboard */,
@@ -148,7 +149,6 @@
 				5220EB0D27208F3B00E8350A /* ScheduleElement.swift */,
 				5220EB0F2720930B00E8350A /* Schedule.swift */,
 				324D1BCA2718742900517B99 /* Assets.xcassets */,
-				325D4F60272F2F7F00146788 /* filingCabinet.jpg */,
 				324D1BF9271B3D8700517B99 /* Orlando.jpg */,
 				324D1BF7271B3D7C00517B99 /* New-York-City.jpg */,
 				324D1BF5271B2FF200517B99 /* Chicago.jpg */,
@@ -298,7 +298,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				324D1BCE2718742900517B99 /* LaunchScreen.storyboard in Resources */,
-				325D4F61272F2F7F00146788 /* filingCabinet.jpg in Resources */,
 				324D1BFA271B3D8700517B99 /* Orlando.jpg in Resources */,
 				5220EB0A27208B1A00E8350A /* Schedule.storyboard in Resources */,
 				324D1BF8271B3D7C00517B99 /* New-York-City.jpg in Resources */,
@@ -345,6 +344,7 @@
 				325D4F5F272F292600146788 /* ModelActivities.swift in Sources */,
 				325D4F5D272F276E00146788 /* Activity.swift in Sources */,
 				325D4F6A272F379500146788 /* BurlingtonView.swift in Sources */,
+				1D07886C2746B06500F5E29E /* MapViewController.swift in Sources */,
 				5220EB0E27208F3B00E8350A /* ScheduleElement.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

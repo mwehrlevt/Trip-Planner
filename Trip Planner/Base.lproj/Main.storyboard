@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lvr-fN-y0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lvr-fN-y0r">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -32,7 +30,7 @@
         <!--Scheduler-->
         <scene sceneID="kWq-JK-ibi">
             <objects>
-                <viewController title="Scheduler" id="uye-0s-yX7" sceneMemberID="viewController">
+                <viewController title="Scheduler" id="uye-0s-yX7" customClass="ScheduleViewController" customModule="Trip_Planner" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qpI-EG-i1o">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -44,13 +42,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="tgb-xc-laU"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="tgb-xc-laU" firstAttribute="trailing" secondItem="YYF-4E-WeU" secondAttribute="trailing" constant="143" id="88F-9g-qa8"/>
                             <constraint firstItem="YYF-4E-WeU" firstAttribute="top" secondItem="tgb-xc-laU" secondAttribute="top" constant="43" id="MIA-CT-skd"/>
                             <constraint firstItem="YYF-4E-WeU" firstAttribute="leading" secondItem="tgb-xc-laU" secondAttribute="leading" constant="143" id="ocE-4w-BoR"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="tgb-xc-laU"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Scheduler" image="calendar" catalog="system" id="kjj-5f-5bQ"/>
                 </viewController>
@@ -73,13 +71,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="eUY-pl-ywW"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="AFL-m5-RqC" firstAttribute="leading" secondItem="eUY-pl-ywW" secondAttribute="leading" constant="155" id="Zkb-gJ-sY2"/>
                             <constraint firstItem="eUY-pl-ywW" firstAttribute="trailing" secondItem="AFL-m5-RqC" secondAttribute="trailing" constant="156" id="ain-GO-DAG"/>
                             <constraint firstItem="AFL-m5-RqC" firstAttribute="top" secondItem="eUY-pl-ywW" secondAttribute="top" constant="48" id="jrs-n5-Rb1"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="eUY-pl-ywW"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Budget" image="dollarsign.circle" catalog="system" id="xMT-yJ-n91"/>
                 </viewController>
@@ -102,12 +100,12 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Where Would You Like to Explore?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ob-El-gx4">
-                                                <rect key="frame" x="38.5" y="34" width="298" height="24"/>
+                                                <rect key="frame" x="40" y="34" width="295" height="24"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZPO-3Z-dUH">
+                                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZPO-3Z-dUH">
                                                 <rect key="frame" x="16" y="98" width="343" height="150"/>
                                                 <color key="backgroundColor" red="0.72687369589999995" green="0.82907098530000001" blue="0.94383537770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
@@ -123,7 +121,7 @@
                                                     <segue destination="Zja-fz-gV9" kind="show" id="TJ1-e7-IYY"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v9B-s1-Rm6">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v9B-s1-Rm6">
                                                 <rect key="frame" x="16" y="268" width="343" height="150"/>
                                                 <color key="backgroundColor" red="0.53529106744114552" green="0.65901385188293826" blue="0.94383537770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
@@ -138,7 +136,7 @@
                                                     <action selector="bostonButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rxz-Ju-TJf"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lyC-JG-eem">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lyC-JG-eem">
                                                 <rect key="frame" x="16" y="442" width="343" height="150"/>
                                                 <color key="backgroundColor" red="0.7439602548409997" green="0.73684990340837231" blue="0.94383537770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
@@ -153,7 +151,7 @@
                                                     <action selector="chicagoButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FjP-6n-eqV"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jno-sr-tdG">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jno-sr-tdG">
                                                 <rect key="frame" x="16" y="618" width="343" height="150"/>
                                                 <color key="backgroundColor" red="0.65436640732365925" green="0.58784459093520647" blue="0.94383537770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
@@ -168,7 +166,7 @@
                                                     <action selector="newYorkCityButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i9Q-jR-I4l"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r2m-0h-IoW">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r2m-0h-IoW">
                                                 <rect key="frame" x="16" y="793" width="343" height="150"/>
                                                 <color key="backgroundColor" red="0.87543356008467421" green="0.64243195777499185" blue="0.94383537770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
@@ -214,7 +212,6 @@
                                 <viewLayoutGuide key="frameLayoutGuide" id="GVu-l1-QhF"/>
                             </scrollView>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.75247957634781981" green="0.8151869339289386" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="fPO-Ip-zmY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7K0-fV-LqU"/>
@@ -223,6 +220,7 @@
                             <constraint firstItem="fPO-Ip-zmY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Yh3-ej-zgU"/>
                             <constraint firstItem="fPO-Ip-zmY" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="fFH-QC-rBW"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" id="CqE-4Y-zqg"/>
                     <navigationItem key="navigationItem" id="lbi-XJ-esU"/>
@@ -246,17 +244,17 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qjN-Pj-MZC">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </view>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="g55-Hz-0Cl"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="g55-Hz-0Cl" firstAttribute="trailing" secondItem="qjN-Pj-MZC" secondAttribute="trailing" id="JYa-yK-Rka"/>
                             <constraint firstItem="g55-Hz-0Cl" firstAttribute="bottom" secondItem="qjN-Pj-MZC" secondAttribute="bottom" id="MBp-aI-3zW"/>
                             <constraint firstItem="qjN-Pj-MZC" firstAttribute="top" secondItem="g55-Hz-0Cl" secondAttribute="top" id="aRw-hf-u79"/>
                             <constraint firstItem="qjN-Pj-MZC" firstAttribute="leading" secondItem="g55-Hz-0Cl" secondAttribute="leading" id="bDs-xG-W6I"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="g55-Hz-0Cl"/>
                     </view>
                     <navigationItem key="navigationItem" id="TwV-An-weP"/>
                 </viewController>
@@ -283,13 +281,13 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </mapView>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="xZf-bg-cJv"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="xZf-bg-cJv" firstAttribute="trailing" secondItem="Vai-4n-FHY" secondAttribute="trailing" constant="168" id="0Rg-Fq-Ijd"/>
                             <constraint firstItem="Vai-4n-FHY" firstAttribute="leading" secondItem="xZf-bg-cJv" secondAttribute="leading" constant="168" id="a1z-hU-EKt"/>
                             <constraint firstItem="Vai-4n-FHY" firstAttribute="top" secondItem="xZf-bg-cJv" secondAttribute="top" constant="40" id="wz8-MI-i91"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="xZf-bg-cJv"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="map" image="map" catalog="system" id="hcm-Pc-7SE"/>
                     <connections>
@@ -307,12 +305,9 @@
         <image name="Chicago.jpg" width="1200" height="675"/>
         <image name="New-York-City.jpg" width="1100" height="619"/>
         <image name="Orlando.jpg" width="651.5999755859375" height="434.39999389648438"/>
-        <image name="calendar" catalog="system" width="128" height="106"/>
-        <image name="dollarsign.circle" catalog="system" width="128" height="121"/>
-        <image name="house" catalog="system" width="128" height="106"/>
-        <image name="map" catalog="system" width="128" height="110"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <image name="calendar" catalog="system" width="64" height="52"/>
+        <image name="dollarsign.circle" catalog="system" width="64" height="60"/>
+        <image name="house" catalog="system" width="64" height="54"/>
+        <image name="map" catalog="system" width="64" height="56"/>
     </resources>
 </document>

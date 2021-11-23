@@ -9,6 +9,9 @@
 import SwiftUI
 
 struct ActivityDetail: View {
+    
+    var schedule: Schedule!
+    
     var activity: Activity
     let cityName = "Burlington"
     @State private var activities: [ActivitiesChosen] = [ActivitiesChosen]()
@@ -107,6 +110,8 @@ struct ActivityDetail: View {
                 })*/
             Button("Add Activity") {
                 print("Added activity")
+                //Add to schedule
+                schedule.createEvent(name: self.activity.id, city: self.cityName, date: self.activityDate, cost: self.activity.cost)
                 self.persistenceController.save(activityName: self.activity.id, city: self.cityName, date: self.activityDate, price: self.activity.cost)
                 // make sure activity was saved
                 self.populateActivities()

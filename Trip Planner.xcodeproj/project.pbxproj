@@ -33,6 +33,7 @@
 		5220EB0C27208EE100E8350A /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5220EB0B27208EE100E8350A /* ScheduleViewController.swift */; };
 		5220EB0E27208F3B00E8350A /* ScheduleElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5220EB0D27208F3B00E8350A /* ScheduleElement.swift */; };
 		5220EB102720930B00E8350A /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5220EB0F2720930B00E8350A /* Schedule.swift */; };
+		529C2866274C57DA00B6E2D3 /* EventItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529C2865274C57DA00B6E2D3 /* EventItemCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,7 @@
 		5220EB0B27208EE100E8350A /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
 		5220EB0D27208F3B00E8350A /* ScheduleElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleElement.swift; sourceTree = "<group>"; };
 		5220EB0F2720930B00E8350A /* Schedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
+		529C2865274C57DA00B6E2D3 /* EventItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventItemCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +143,7 @@
 				1D07886B2746B06500F5E29E /* MapViewController.swift */,
 				324D1BC3271873A400517B99 /* SceneDelegate.swift */,
 				324D1BC5271873A400517B99 /* ViewController.swift */,
+				529C2865274C57DA00B6E2D3 /* EventItemCell.swift */,
 				324D1BC7271873A400517B99 /* Main.storyboard */,
 				5220EB0B27208EE100E8350A /* ScheduleViewController.swift */,
 				5220EB0D27208F3B00E8350A /* ScheduleElement.swift */,
@@ -342,6 +345,7 @@
 				325D4F6A272F379500146788 /* BurlingtonView.swift in Sources */,
 				1D07886C2746B06500F5E29E /* MapViewController.swift in Sources */,
 				5220EB0E27208F3B00E8350A /* ScheduleElement.swift in Sources */,
+				529C2866274C57DA00B6E2D3 /* EventItemCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

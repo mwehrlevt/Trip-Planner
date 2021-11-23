@@ -9,6 +9,9 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    var schedule: Schedule!
+    
     // where do you want to go? label
     @IBOutlet var placesToGoLabel: UILabel!
     @IBOutlet var burlingtonButton: UIButton!

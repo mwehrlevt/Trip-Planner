@@ -9,29 +9,22 @@
 import Foundation
 import UIKit
 
-class ScheduleElement {
-    var date: Date
+class ScheduleElement: Equatable, Codable {
+    
     var name: String
-    var location: String
+    var city: String
+    var date: Date
+    var cost: String
     
-    init(name: String, date: Date, location: String) {
+    init(name: String, city: String, date: Date, cost: String) {
         self.name = name
+        self.city = city
         self.date = date
-        self.location = location
+        self.cost = cost
     }
     
-    convenience init(random: Bool = false) {
-        if random {
-            let randomNames = ["Burlington Farmers Market", "Ben and Jerry's Ice Cream", "Foam Brewers"]
-            let randomLocations = ["Church Street", "Pearl Street", "Leddy Park"]
-            
-            let randomName = randomNames.randomElement()
-            let date = Date()
-            let randomLocation = randomLocations.randomElement()
-            
-            self.init(name: randomName!, date: date,location: randomLocation!)
-        } else {
-            self.init(name: "", date: Date(), location: "")
-        }
+    static func ==(lhs: ScheduleElement, rhs: ScheduleElement) -> Bool {
+        return lhs.name == rhs.name && lhs.city == rhs.city && lhs.date == rhs.date && lhs.cost == rhs.cost
     }
+    
 }

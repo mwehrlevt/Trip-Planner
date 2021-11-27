@@ -30,7 +30,7 @@
 		325D4F68272F372600146788 /* ActivityDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325D4F67272F372600146788 /* ActivityDetail.swift */; };
 		325D4F6A272F379500146788 /* BurlingtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325D4F69272F379500146788 /* BurlingtonView.swift */; };
 		325D4F7327320FEC00146788 /* BurlingtonActivities.json in Resources */ = {isa = PBXBuildFile; fileRef = 325D4F7227320FEC00146788 /* BurlingtonActivities.json */; };
-		32DDD20327457CC100E57CA3 /* SchedulerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DDD20227457CC100E57CA3 /* SchedulerTest.swift */; };
+		32DDD2062752CA5800E57CA3 /* BostonActivities.json in Resources */ = {isa = PBXBuildFile; fileRef = 32DDD2052752CA5800E57CA3 /* BostonActivities.json */; };
 		5220EB0A27208B1A00E8350A /* Schedule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5220EB0927208B1A00E8350A /* Schedule.storyboard */; };
 		5220EB0C27208EE100E8350A /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5220EB0B27208EE100E8350A /* ScheduleViewController.swift */; };
 		5220EB0E27208F3B00E8350A /* ScheduleElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5220EB0D27208F3B00E8350A /* ScheduleElement.swift */; };
@@ -84,7 +84,7 @@
 		325D4F67272F372600146788 /* ActivityDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityDetail.swift; sourceTree = "<group>"; };
 		325D4F69272F379500146788 /* BurlingtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BurlingtonView.swift; sourceTree = "<group>"; };
 		325D4F7227320FEC00146788 /* BurlingtonActivities.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = BurlingtonActivities.json; sourceTree = "<group>"; };
-		32DDD20227457CC100E57CA3 /* SchedulerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulerTest.swift; sourceTree = "<group>"; };
+		32DDD2052752CA5800E57CA3 /* BostonActivities.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = BostonActivities.json; sourceTree = "<group>"; };
 		5220EB0927208B1A00E8350A /* Schedule.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Schedule.storyboard; sourceTree = "<group>"; };
 		5220EB0B27208EE100E8350A /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
 		5220EB0D27208F3B00E8350A /* ScheduleElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleElement.swift; sourceTree = "<group>"; };
@@ -139,6 +139,7 @@
 		324D1BC0271873A300517B99 /* Trip Planner */ = {
 			isa = PBXGroup;
 			children = (
+				32DDD2042752C9A400E57CA3 /* BostonViews */,
 				325D4F64272F357F00146788 /* BurlingtonViews */,
 				324D1BC1271873A400517B99 /* AppDelegate.swift */,
 				322FD8F22741DD35004B9CAE /* ActivitesData.xcdatamodeld */,
@@ -159,7 +160,6 @@
 				324D1BCC2718742900517B99 /* LaunchScreen.storyboard */,
 				324D1BCF2718742900517B99 /* Info.plist */,
 				322FD8F52741DE58004B9CAE /* PersistenceController.swift */,
-				32DDD20227457CC100E57CA3 /* SchedulerTest.swift */,
 			);
 			path = "Trip Planner";
 			sourceTree = "<group>";
@@ -194,6 +194,14 @@
 				325D4F7227320FEC00146788 /* BurlingtonActivities.json */,
 			);
 			path = BurlingtonViews;
+			sourceTree = "<group>";
+		};
+		32DDD2042752C9A400E57CA3 /* BostonViews */ = {
+			isa = PBXGroup;
+			children = (
+				32DDD2052752CA5800E57CA3 /* BostonActivities.json */,
+			);
+			path = BostonViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,6 +310,7 @@
 			files = (
 				324D1BCE2718742900517B99 /* LaunchScreen.storyboard in Resources */,
 				324D1BFA271B3D8700517B99 /* Orlando.jpg in Resources */,
+				32DDD2062752CA5800E57CA3 /* BostonActivities.json in Resources */,
 				5220EB0A27208B1A00E8350A /* Schedule.storyboard in Resources */,
 				324D1BF8271B3D7C00517B99 /* New-York-City.jpg in Resources */,
 				325D4F7327320FEC00146788 /* BurlingtonActivities.json in Resources */,
@@ -349,7 +358,6 @@
 				325D4F6A272F379500146788 /* BurlingtonView.swift in Sources */,
 				1D07886C2746B06500F5E29E /* MapViewController.swift in Sources */,
 				5220EB0E27208F3B00E8350A /* ScheduleElement.swift in Sources */,
-				32DDD20327457CC100E57CA3 /* SchedulerTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

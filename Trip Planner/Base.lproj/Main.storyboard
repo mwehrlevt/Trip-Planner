@@ -134,6 +134,7 @@
                                                 </state>
                                                 <connections>
                                                     <action selector="bostonButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rxz-Ju-TJf"/>
+                                                    <segue destination="g1j-HJ-A60" kind="show" id="D6a-V9-A4Y"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lyC-JG-eem">
@@ -260,7 +261,35 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GqL-py-moo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1503" y="1219"/>
+            <point key="canvasLocation" x="-1884" y="1216"/>
+        </scene>
+        <!--Boston View Controller-->
+        <scene sceneID="RcR-JQ-4qq">
+            <objects>
+                <viewController id="g1j-HJ-A60" customClass="BostonViewController" customModule="Trip_Planner" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Tac-9J-hjg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HHp-2R-T65">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="HHp-2R-T65" firstAttribute="leading" secondItem="K2N-E7-Dus" secondAttribute="leading" id="BOo-lj-7Tp"/>
+                            <constraint firstItem="HHp-2R-T65" firstAttribute="top" secondItem="K2N-E7-Dus" secondAttribute="top" id="NyZ-Fb-gHH"/>
+                            <constraint firstItem="K2N-E7-Dus" firstAttribute="trailing" secondItem="HHp-2R-T65" secondAttribute="trailing" id="Prl-3b-mfW"/>
+                            <constraint firstItem="K2N-E7-Dus" firstAttribute="bottom" secondItem="HHp-2R-T65" secondAttribute="bottom" id="TW1-xM-Y3z"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="K2N-E7-Dus"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="xbY-7t-oCX"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fVz-iC-lhm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1230" y="1216"/>
         </scene>
         <!--Map-->
         <scene sceneID="UkF-NA-Xae">

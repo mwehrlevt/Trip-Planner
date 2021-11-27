@@ -1,0 +1,69 @@
+[
+    {
+        "id": "Central Park",
+        "category": "Park",
+        "cost": "Free",
+        "location": "59th to 110th Street Manhattan Borough, New York City, NY 10022",
+        "coordinates": {
+            "longitude": -73.967415,
+            "latitude": 40.71724
+        },
+        "imageName": "centralPark"
+    },
+    {
+        "id": "Statue of Liberty",
+        "category": "Landmark",
+        "cost": "$39.00",
+        "location": "Liberty Island, New York City, NY 10004",
+        "coordinates": {
+            "longitude": -74.044071,
+            "latitude": 40.689589
+        },
+        "imageName": "statueOfLiberty"
+    },
+    {
+        "id": "Empire State Building",
+        "category": "Landmark",
+        "cost": "$45.73",
+        "location": "20 West 34th Street, New York City, NY 10001",
+        "coordinates": {
+            "longitude": -73.985407,
+            "latitude": 40.748669
+        },
+        "imageName": "empireStateBuilding"
+    },
+    {
+        "id": "The Metropolitan Museum of Art",
+        "category": "Museum",
+        "cost": "$40.14",
+        "location": "1000 5th Ave, New York City, Ny 10028",
+        "coordinates": {
+            "longitude": -73.962387,
+            "latitude": 40.779024
+        },
+        "imageName": "theMet"
+    },
+    {
+        "id": "Radio City Music Hall,
+        "category": "Entertainment",
+        "cost": "from $31.00",
+        "location": "1260 6th Ave, New York City, NY 10020",
+        "coordinates": {
+            "longitude": -73.980225,
+            "latitude": 40.760081
+        },
+        "imageName": "radioCityMusicHall"
+    },
+    {
+        "id": "Museum of Modern Art (MoMA)",
+        "category": "Museum",
+        "cost": "$25.00",
+        "location": "11 West 53rd Street, New York City, NY 10019",
+        "coordinates": {
+            "longitude": -73.977700,
+            "latitude": 4.761250
+        },
+        "imageName": "MoMA"
+    }
+]
+

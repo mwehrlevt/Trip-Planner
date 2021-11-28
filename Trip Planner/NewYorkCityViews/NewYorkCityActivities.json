@@ -34,7 +34,7 @@
     },
     {
         "id": "The Metropolitan Museum of Art",
-        "category": "Museum",
+        "category": "Cultural",
         "cost": "$40.14",
         "location": "1000 5th Ave, New York City, Ny 10028",
         "coordinates": {
@@ -44,7 +44,7 @@
         "imageName": "theMet"
     },
     {
-        "id": "Radio City Music Hall,
+        "id": "Radio City Music Hall",
         "category": "Entertainment",
         "cost": "from $31.00",
         "location": "1260 6th Ave, New York City, NY 10020",
@@ -56,12 +56,12 @@
     },
     {
         "id": "Museum of Modern Art (MoMA)",
-        "category": "Museum",
+        "category": "Cultural",
         "cost": "$25.00",
         "location": "11 West 53rd Street, New York City, NY 10019",
         "coordinates": {
             "longitude": -73.977700,
-            "latitude": 4.761250
+            "latitude": 40.761250
         },
         "imageName": "MoMA"
     }

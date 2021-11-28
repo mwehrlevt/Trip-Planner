@@ -52,7 +52,7 @@ struct ActivityList: View {
             activitiesArray: culturalActivities
         ),
         Category(
-            title: "Landmark",
+            title: "Landmarks",
             activitiesArray: landmarkActivities
         ),
         Category(

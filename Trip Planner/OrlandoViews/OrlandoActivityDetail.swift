@@ -1,5 +1,5 @@
 //
-//  BostonActivityDetail.swift
+//  OrlandoActivityDetail.swift
 //  Trip Planner
 //
 //  Created by Michelle on 11/27/21.
@@ -8,9 +8,9 @@
 
 import SwiftUI
 
-struct BostonActivityDetail: View {
-    var activity: BostonActivity
-    let cityName = "Boston"
+struct OrlandoActivityDetail: View {
+    var activity: OrlandoActivity
+    let cityName = "Orlando"
     
     @State private var activityDate = Date()
     
@@ -46,9 +46,9 @@ struct BostonActivityDetail: View {
     }
 }
 
-struct BostonActivityDetail_Previews: PreviewProvider {
+struct OrlandoActivityDetail_Previews: PreviewProvider {
     static var previews: some View {
-        BostonActivityDetail(activity: bostonActivities[0])
+        OrlandoActivityDetail(activity: orlandoActivities[0])
     }
 }
 

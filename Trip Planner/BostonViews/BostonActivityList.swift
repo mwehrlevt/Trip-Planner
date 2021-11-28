@@ -55,11 +55,11 @@ struct BostonActivityList: View {
             activitiesArray: bostonFoodActivities
         ),
         BostonCategory(
-            title: "Park",
+            title: "Parks",
             activitiesArray: bostonParkActivities
         ),
         BostonCategory(
-            title: "Tour",
+            title: "Tours",
             activitiesArray: bostonTourActivities
         )
     ]

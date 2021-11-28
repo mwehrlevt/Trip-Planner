@@ -12,7 +12,7 @@
     },
     {
         "id": "The Art Institute of Chicago",
-        "category": "Museum",
+        "category": "Cultural",
         "cost": "$25.00",
         "location": "111 S Michigan Ave, Chicago, IL 60603",
         "coordinates": {
@@ -34,7 +34,7 @@
     },
     {
         "id": "Museum of Science and Industry",
-        "category": "Museum",
+        "category": "Cultural",
         "cost": "$21.95",
         "location": "5700 S. Lake Shore Dr, Chicago, IL 60637",
         "coordinates": {

@@ -39,6 +39,7 @@
 		32DDD2162752F04200E57CA3 /* BostonActivityList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DDD2152752F04200E57CA3 /* BostonActivityList.swift */; };
 		32DDD2182752F4DC00E57CA3 /* BostonActivityDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DDD2172752F4DC00E57CA3 /* BostonActivityDetail.swift */; };
 		32DDD21A2752F55F00E57CA3 /* BostonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DDD2192752F55F00E57CA3 /* BostonView.swift */; };
+		32DDD21D2752FB4A00E57CA3 /* OrlandoActivities.json in Resources */ = {isa = PBXBuildFile; fileRef = 32DDD21C2752FB4A00E57CA3 /* OrlandoActivities.json */; };
 		5220EB0A27208B1A00E8350A /* Schedule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5220EB0927208B1A00E8350A /* Schedule.storyboard */; };
 		5220EB0C27208EE100E8350A /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5220EB0B27208EE100E8350A /* ScheduleViewController.swift */; };
 		5220EB0E27208F3B00E8350A /* ScheduleElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5220EB0D27208F3B00E8350A /* ScheduleElement.swift */; };
@@ -101,6 +102,7 @@
 		32DDD2152752F04200E57CA3 /* BostonActivityList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BostonActivityList.swift; sourceTree = "<group>"; };
 		32DDD2172752F4DC00E57CA3 /* BostonActivityDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BostonActivityDetail.swift; sourceTree = "<group>"; };
 		32DDD2192752F55F00E57CA3 /* BostonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BostonView.swift; sourceTree = "<group>"; };
+		32DDD21C2752FB4A00E57CA3 /* OrlandoActivities.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = OrlandoActivities.json; sourceTree = "<group>"; };
 		5220EB0927208B1A00E8350A /* Schedule.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Schedule.storyboard; sourceTree = "<group>"; };
 		5220EB0B27208EE100E8350A /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
 		5220EB0D27208F3B00E8350A /* ScheduleElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleElement.swift; sourceTree = "<group>"; };
@@ -155,7 +157,8 @@
 		324D1BC0271873A300517B99 /* Trip Planner */ = {
 			isa = PBXGroup;
 			children = (
-				32DDD20C2752E06E00E57CA3 /* NewYorkCityActivities */,
+				32DDD21B2752FB1200E57CA3 /* OrlandoViews */,
+				32DDD20C2752E06E00E57CA3 /* NewYorkCityViews */,
 				32DDD2092752D84000E57CA3 /* ChicagoViews */,
 				32DDD2042752C9A400E57CA3 /* BostonViews */,
 				325D4F64272F357F00146788 /* BurlingtonViews */,
@@ -236,12 +239,20 @@
 			path = ChicagoViews;
 			sourceTree = "<group>";
 		};
-		32DDD20C2752E06E00E57CA3 /* NewYorkCityActivities */ = {
+		32DDD20C2752E06E00E57CA3 /* NewYorkCityViews */ = {
 			isa = PBXGroup;
 			children = (
 				32DDD20D2752E09C00E57CA3 /* NewYorkCityActivities.json */,
 			);
-			path = NewYorkCityActivities;
+			path = NewYorkCityViews;
+			sourceTree = "<group>";
+		};
+		32DDD21B2752FB1200E57CA3 /* OrlandoViews */ = {
+			isa = PBXGroup;
+			children = (
+				32DDD21C2752FB4A00E57CA3 /* OrlandoActivities.json */,
+			);
+			path = OrlandoViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -356,6 +367,7 @@
 				32DDD20B2752D88100E57CA3 /* ChicagoActivities.json in Resources */,
 				325D4F7327320FEC00146788 /* BurlingtonActivities.json in Resources */,
 				324D1BF22718D65100517B99 /* Burlington-Vermont.jpg in Resources */,
+				32DDD21D2752FB4A00E57CA3 /* OrlandoActivities.json in Resources */,
 				324D1BCB2718742900517B99 /* Assets.xcassets in Resources */,
 				32DDD20E2752E09C00E57CA3 /* NewYorkCityActivities.json in Resources */,
 				324D1BF4271B2E8800517B99 /* Boston.jpg in Resources */,

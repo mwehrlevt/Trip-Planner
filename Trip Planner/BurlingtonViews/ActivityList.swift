@@ -39,7 +39,6 @@ var entertainmentActivities: [Activity] {
 }
 
 struct ActivityList: View {
-    let persistenceController: PersistenceController
     
     // all the categories array
     var CategoriesData = [
@@ -71,7 +70,7 @@ struct ActivityList: View {
                 ForEach(CategoriesData) { category in
                     Section(header: Text(category.title)) {
                         ForEach(category.activitiesArray) { activity in
-                            NavigationLink(destination: ActivityDetail(activity: activity, persistenceController: PersistenceController())) {
+                            NavigationLink(destination: ActivityDetail(activity: activity)) {
                                 ActivityRow(activity: activity)
                             }
                         }
@@ -85,6 +84,6 @@ struct ActivityList: View {
 
 struct ActivityList_Previews: PreviewProvider {
     static var previews: some View {
-        ActivityList(persistenceController: PersistenceController())
+        ActivityList()
     }
 }

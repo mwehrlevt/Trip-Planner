@@ -8,6 +8,8 @@
 
 import UIKit
 
+let schedule = Schedule()
+
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
@@ -20,15 +22,17 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let _ = (scene as? UIWindowScene) else { return }
         
         //Creating Scheudle
-        let schedule = Schedule()
+        
         
         // Access the ScheduleViewController and set Events
         let tabController = window!.rootViewController as! UITabBarController
         let scheduleController = tabController.viewControllers?[2] as! ScheduleViewController
-        scheduleController.schedule = schedule
+        
+        schedule.createEvent(name: "Temp", city: "Temp", date: Date.init(), cost: "$$$")
         
         let viewController = tabController.viewControllers?[0] as! ViewController
         viewController.schedule = schedule
+        viewController.scheduleController = scheduleController
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

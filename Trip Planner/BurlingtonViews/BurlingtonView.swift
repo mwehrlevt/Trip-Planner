@@ -23,6 +23,7 @@ struct BurlingtonView_Previews: PreviewProvider {
 
 class BurlingtonViewController: UIHostingController<BurlingtonView> {
     var schedule: Schedule!
+    var scheduleController: ScheduleViewController!
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder, rootView: BurlingtonView());

@@ -11,8 +11,6 @@ import UIKit
 
 class ScheduleViewController: UITableViewController {
     
-    var schedule: Schedule!
-    
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         
@@ -23,6 +21,17 @@ class ScheduleViewController: UITableViewController {
         return schedule.schedule.count
     }
     
+    func addNewEvent(newEvent: ScheduleElement) {
+        
+        // figure out where that item is in the array
+        if let index = schedule.schedule.firstIndex(of: newEvent) {
+            let indexPath = IndexPath(row: index, section: 0)
+            
+            // insert into new row in table
+            tableView.insertRows(at: [indexPath], with: .automatic)
+        }
+    }
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "EventItemCell", for: indexPath) as! EventItemCell
         
@@ -31,7 +40,6 @@ class ScheduleViewController: UITableViewController {
         
         // configure the cell with the item
         cell.name.text = event.name
-        cell.city.text = event.city
         cell.date.text = event.date.description
         cell.cost.text = event.cost
         

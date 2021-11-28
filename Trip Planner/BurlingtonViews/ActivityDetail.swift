@@ -10,8 +10,6 @@ import SwiftUI
 
 struct ActivityDetail: View {
     
-    var schedule: Schedule!
-    
     var activity: Activity
     let cityName = "Burlington"
     @State private var activities: [ActivitiesChosen] = [ActivitiesChosen]()

@@ -10,7 +10,6 @@ import UIKit
 
 class EventItemCell: UITableViewCell {
     @IBOutlet var name: UILabel!
-    @IBOutlet var city: UILabel!
     @IBOutlet var date: UILabel!
     @IBOutlet var cost: UILabel!
 }

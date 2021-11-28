@@ -38,10 +38,10 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="J86-xk-Dbx">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="J86-xk-Dbx" customClass="EventItemCell" customModule="Trip_Planner" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="44.5" width="375" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="J86-xk-Dbx" id="qM2-6n-45N" customClass="EventItemCell" customModule="Trip_Planner" customModuleProvider="target">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="J86-xk-Dbx" id="qM2-6n-45N">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
@@ -73,6 +73,11 @@
                                         <constraint firstItem="59e-Im-id5" firstAttribute="leading" secondItem="Rrt-kb-nYQ" secondAttribute="leading" id="yIn-SZ-kpf"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="cost" destination="X6U-M5-NBz" id="gPc-PK-vZ1"/>
+                                    <outlet property="date" destination="59e-Im-id5" id="pG9-ng-KB2"/>
+                                    <outlet property="name" destination="Rrt-kb-nYQ" id="2cQ-IY-D2M"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                     </tableView>

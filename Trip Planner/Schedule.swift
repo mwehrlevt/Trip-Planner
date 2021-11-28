@@ -25,7 +25,6 @@ class Schedule {
             let unarchiver = PropertyListDecoder()
             let events = try unarchiver.decode([ScheduleElement].self, from: data)
             if(events.isEmpty){
-                createEvent(name: "Placeholder",city: "City",date: Date.init(),cost: "$$$")
                 print(events)
             } else {
                 schedule = events
@@ -43,6 +42,8 @@ class Schedule {
         let newEvent = ScheduleElement(name: name,city: city,date: date,cost: cost)
         
         schedule.append(newEvent)
+        
+        print("Added Event \(name)")
         
         return newEvent
     }

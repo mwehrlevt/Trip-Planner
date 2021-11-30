@@ -11,7 +11,7 @@ import UIKit
 
 struct BurlingtonView: View {
     var body: some View {
-        ActivityList(persistenceController: PersistenceController())
+        ActivityList()
     }
 }
 

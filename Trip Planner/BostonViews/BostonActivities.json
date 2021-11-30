@@ -1,0 +1,101 @@
+[
+    {
+        "id": "Duck Boat Sightseeing City Tour",
+        "category": "Tour",
+        "cost": "$53.35",
+        "location": "Museum of Science, 1 Science Park, Boston, MA 02114",
+        "coordinates": {
+            "longitude": -71.071210,
+            "latitude": 42.367750
+        },
+        "imageName": "duckBoat"
+    },
+    {
+        "id": "Boston Ghosts & Gravestones Trolley Tour",
+        "category": "Tour",
+        "cost": "$45.15",
+        "location": "200 Atlantic Ave, Boston, MA 02110",
+        "coordinates": {
+            "longitude": -71.051915,
+            "latitude": 42.359972
+        },
+        "imageName": "bostonGhosts"
+    },
+    {
+        "id": "Freedom Trail",
+        "category": "Tour",
+        "cost": "$20",
+        "location": "28 State St, Boston, MA 02109",
+        "coordinates": {
+            "longitude": -71.057076,
+            "latitude": 42.359281
+        },
+        "imageName": "freedomTrail"
+    },
+    {
+        "id": "Adams National Historical Park",
+        "category": "Cultural",
+        "cost": "Free",
+        "location": "135 Adams St., Quincy, MA 02169",
+        "coordinates": {
+            "longitude": -71.010895,
+            "latitude": 42.256035
+        },
+        "imageName": "adamsPark"
+    },
+    {
+        "id": "Mario's Restaurant",
+        "category": "Food",
+        "cost": "$$-$$$",
+        "location": "347 Chelsea St., Boston, MA 02128",
+        "coordinates": {
+            "longitude": -71.029010,
+            "latitude": 42.378258
+        },
+        "imageName": "mariosRestaurant"
+    },
+    {
+        "id": "Mike's City Diner",
+        "category": "Food",
+        "cost": "$",
+        "location": "1714 Washington St., Boston, MA 02118",
+        "coordinates": {
+            "longitude": -71.076134,
+            "latitude": 42.337030
+        },
+        "imageName": "mikesDiner"
+    },
+    {
+        "id": "Boston Common",
+        "category": "Park",
+        "cost": "Free",
+        "location": "139 Tremont St., Boston, MA 02111",
+        "coordinates": {
+            "longitude": -71.063783,
+            "latitude": 42.355285
+        },
+        "imageName": "bostonCommon"
+    },
+    {
+        "id": "Boston Symphony Hall",
+        "category": "Entertainment",
+        "cost": "$$-$$$",
+        "location": "301 Massachusetts Ave, Boston, MA 02115",
+        "coordinates": {
+            "longitude": -71.085384,
+            "latitude": 42.343033
+        },
+        "imageName": "bostonSymphonyHall"
+    },
+    {
+        "id": "Museum of Fine Arts",
+        "category": "Cultural",
+        "cost": "$6",
+        "location": "465 Huntington Ave, Bostonm MA 02115",
+        "coordinates": {
+            "longitude": -71.093793,
+            "latitude": 42.338812
+        },
+        "imageName": "museumOfFineArts"
+    }
+]

@@ -1,0 +1,68 @@
+[
+    {
+        "id": "Chicago Architecture River Cruise",
+        "category": "Tour",
+        "cost": "$40.33",
+        "location": "401 N Michigan Ave, Chicago, IL 60611",
+        "coordinates": {
+            "longitude": -87.623057,
+            "latitude": 41.889243
+        },
+        "imageName": "chicagoRiverCruise"
+    },
+    {
+        "id": "The Art Institute of Chicago",
+        "category": "Cultural",
+        "cost": "$25.00",
+        "location": "111 S Michigan Ave, Chicago, IL 60603",
+        "coordinates": {
+            "longitude": -87.622472,
+            "latitude": 41.879932
+        },
+        "imageName": "artInstituteOfChicago"
+    },
+    {
+        "id": "Cloud Gate",
+        "category": "Park",
+        "cost": "Free",
+        "location": "201 E. Randolph St. Millenium Park, Chicago, IL 60601",
+        "coordinates": {
+            "longitude": -87.623593,
+            "latitude": 41.882521
+        },
+        "imageName": "cloudGate"
+    },
+    {
+        "id": "Museum of Science and Industry",
+        "category": "Cultural",
+        "cost": "$21.95",
+        "location": "5700 S. Lake Shore Dr, Chicago, IL 60637",
+        "coordinates": {
+            "longitude": -87.582904,
+            "latitude": 41.789865
+        },
+        "imageName": "museumOfScienceChicago"
+    },
+    {
+        "id": "Chicago Craft Brewery Barrel Bus Tour",
+        "category": "Tour",
+        "cost": "$89.60",
+        "location": "600 N. Clark St, Chicago, IL 60654",
+        "coordinates": {
+            "longitude": -87.631200,
+            "latitude": 41.892972
+        },
+        "imageName": "chicagoBreweryTour"
+    },
+    {
+        "id": "Hard Rock Cafe",
+        "category": "Food",
+        "cost": "$$",
+        "location": "63 W. Ontario St, Chicago, IL 60654",
+        "coordinates": {
+            "longitude": -87.630426,
+            "latitude": 41.893217
+        },
+        "imageName": "hardRockCafe"
+    }
+]

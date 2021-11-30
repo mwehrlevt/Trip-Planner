@@ -1,0 +1,58 @@
+[
+    {
+        "id": "Animal Kingdom",
+        "category": "Disney Park",
+        "cost": "$109",
+        "location": "2901 Osceola Pkwy, Bay Lake, FL 34747",
+        "coordinates": {
+            "longitude": -81.591432,
+            "latitude": 28.359630
+        },
+        "imageName": "animalKingdom"
+    },
+    {
+        "id": "Epcot",
+        "category": "Disney Park",
+        "cost": "$109.00",
+        "location": "200 Epcot Center Dr, Lake Buena Vista, FL 32830",
+        "coordinates": {
+            "longitude": -81.549360,
+            "latitude": 28.374371
+        },
+        "imageName": "epcot"
+    },
+    {
+        "id": "Magic Kingdom",
+        "category": "Disney Park",
+        "cost": "$109.00",
+        "location": "Lake Buena Vista, FL 32836",
+        "coordinates": {
+            "longitude": -81.580500,
+            "latitude": 28.416784
+        },
+        "imageName": "magicKingdom"
+    },
+    {
+        "id": "Hollywood Studios",
+        "category": "Disney Park",
+        "cost": "$109.00",
+        "location": "351 S. Studio Dr, Lake Buena Vista, FL 32830",
+        "coordinates": {
+            "longitude": -81.558281,
+            "latitude": 28.357434
+        },
+        "imageName": "hollywoodStudios"
+    },
+    {
+        "id": "Typhoon Lagoon Water Park",
+        "category": "Disney Park",
+        "cost": "$109.00",
+        "location": "1145 E. Buena Vista Dr, Orlando, FL 32830",
+        "coordinates": {
+            "longitude": -81.529796,
+            "latitude": 28.366195
+        },
+        "imageName": "waterPark"
+    }
+]
+

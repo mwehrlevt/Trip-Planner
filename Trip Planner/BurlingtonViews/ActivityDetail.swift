@@ -9,6 +9,7 @@
 import SwiftUI
 
 struct ActivityDetail: View {
+    
     var activity: Activity
     let cityName = "Burlington"
     
@@ -41,6 +42,9 @@ struct ActivityDetail: View {
             DatePicker("Activity Date", selection: $activityDate, in: Date()...)
             Button("Add Activity") {
                 print("Added activity")
+                //Add to schedule
+                schedule.createEvent(name: self.activity.id, city: self.cityName, date: self.activityDate, cost: self.activity.cost)
+
             }
         }
     }

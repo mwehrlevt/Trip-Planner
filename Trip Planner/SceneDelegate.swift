@@ -21,18 +21,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
         
-        //Creating Scheudle
-        
-        
-        // Access the ScheduleViewController and set Events
-        let tabController = window!.rootViewController as! UITabBarController
-        let scheduleController = tabController.viewControllers?[2] as! ScheduleViewController
         
         schedule.createEvent(name: "Temp", city: "Temp", date: Date.init(), cost: "$$$")
         
-        let viewController = tabController.viewControllers?[0] as! ViewController
-        viewController.schedule = schedule
-        viewController.scheduleController = scheduleController
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

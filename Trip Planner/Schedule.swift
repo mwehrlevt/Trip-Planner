@@ -24,12 +24,7 @@ class Schedule {
             let data = try Data(contentsOf: eventArchiveURL)
             let unarchiver = PropertyListDecoder()
             let events = try unarchiver.decode([ScheduleElement].self, from: data)
-            if(events.isEmpty){
-                print(events)
-            } else {
-                schedule = events
-            }
-            
+            schedule = events
         } catch {
             print("Error while reading in scheduled events: \(error)")
         }

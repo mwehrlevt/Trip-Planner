@@ -11,6 +11,8 @@ import UIKit
 
 class ScheduleViewController: UITableViewController {
     
+    var myTableView : UITableView!
+    
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         
@@ -33,15 +35,12 @@ class ScheduleViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "EventItemCell", for: indexPath) as! EventItemCell
+        let cell = UITableViewCell(style: .value1, reuseIdentifier: "UITableViewCell")
         
-        // Set the text on the cell
         let event = schedule.schedule[indexPath.row]
         
-        // configure the cell with the item
-        cell.name.text = event.name
-        cell.date.text = event.date.description
-        cell.cost.text = event.cost
+        cell.textLabel?.text = event.name
+        cell.detailTextLabel?.text = event.cost
         
         return cell
     }
@@ -69,7 +68,28 @@ class ScheduleViewController: UITableViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
+        myTableView = UITableView()
+
+        myTableView.dataSource = self
+        myTableView.delegate = self
+        
+        myTableView.translatesAutoresizingMaskIntoConstraints = false
+        self.myTableView.register(UITableViewCell.self, forCellReuseIdentifier: "UITableViewCell")
+        
+        view.addSubview(myTableView)
+        
+        let tableTop = myTableView.topAnchor.constraint(equalTo: view.topAnchor)
+        let tableBottom = myTableView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
+        let tableLeft = myTableView.leftAnchor.constraint(equalTo: view.leftAnchor)
+        let tableRight = myTableView.rightAnchor.constraint(equalTo: view.rightAnchor)
+        
+        tableTop.isActive = true
+        tableBottom.isActive = true
+        tableLeft.isActive = true
+        tableRight.isActive = true
+        
         tableView.reloadData()
+        
     }
     
 }

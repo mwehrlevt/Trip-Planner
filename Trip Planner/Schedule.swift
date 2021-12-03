@@ -40,6 +40,8 @@ class Schedule {
         
         print("Added Event \(name)")
         
+        sortSchedule()
+        
         return newEvent
     }
     
@@ -47,6 +49,10 @@ class Schedule {
         if let index = schedule.firstIndex(of: event) {
             schedule.remove(at: index)
         }
+    }
+    
+    func sortSchedule(){
+        schedule = schedule.sorted(by: {$0.date < $1.date})
     }
     
     @objc func saveChanges() -> Bool {

@@ -12,7 +12,11 @@ class EventItemCell: UITableViewCell {
     var event : ScheduleElement?{
         didSet {
             eventNameLabel.text = event?.name
-            eventDateLabel.text = event?.date.description
+            
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "HH:mm"
+            eventDateLabel.text = dateFormatter.string(for: event?.date)
+            
             eventCostLabel.text = event?.cost
         }
     }
@@ -48,6 +52,13 @@ class EventItemCell: UITableViewCell {
         addSubview(eventNameLabel)
         addSubview(eventDateLabel)
         addSubview(eventCostLabel)
+        
+        eventNameLabel.translatesAutoresizingMaskIntoConstraints = false
+        let topName = eventNameLabel.topAnchor.constraint(equalTo: topAnchor, constant: 8)
+        let leadingName = eventNameLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 8)
+        
+        topName.isActive = true
+        leadingName.isActive = true
     }
     
     required init?(coder aDecoder:NSCoder){

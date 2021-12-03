@@ -12,6 +12,7 @@ import UIKit
 class ScheduleViewController: UITableViewController {
     
     var myTableView : UITableView!
+    let cellId = "EventItemCell"
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -35,12 +36,13 @@ class ScheduleViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(style: .value1, reuseIdentifier: "UITableViewCell")
-        
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as! EventItemCell
+                
         let event = schedule.schedule[indexPath.row]
         
-        cell.textLabel?.text = event.name
-        cell.detailTextLabel?.text = event.cost
+        print(event.name)
+        
+        cell.event = event
         
         return cell
     }
@@ -61,6 +63,8 @@ class ScheduleViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        tableView.register(EventItemCell.self, forCellReuseIdentifier: cellId)
+        
         tableView.rowHeight = UITableView.automaticDimension
         tableView.estimatedRowHeight = 65
     }
@@ -74,8 +78,6 @@ class ScheduleViewController: UITableViewController {
         myTableView.delegate = self
         
         myTableView.translatesAutoresizingMaskIntoConstraints = false
-        self.myTableView.register(UITableViewCell.self, forCellReuseIdentifier: "UITableViewCell")
-        
         view.addSubview(myTableView)
         
         let tableTop = myTableView.topAnchor.constraint(equalTo: view.topAnchor)

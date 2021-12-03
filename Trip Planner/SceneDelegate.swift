@@ -21,6 +21,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
         
+        let expensesList = ExpensesList()
+        
+        // Access ExpensesViewController and set its expense store
+       // let navController = window!.rootViewController as! UINavigationController
+        //let expensesController = navController.topViewController as! BudgetViewController
+        //expensesController.expensesList = expensesList
+        
         
         schedule.createEvent(name: "Temp", city: "Temp", date: Date.init(), cost: "$$$")
         

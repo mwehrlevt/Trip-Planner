@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A71B00E275A776900DC2FA0 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A71B00D275A776900DC2FA0 /* ListViewController.swift */; };
+		1A762392275840F200045152 /* BudgetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A762391275840F200045152 /* BudgetViewController.swift */; };
+		1A7623942758514500045152 /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7623932758514500045152 /* Expense.swift */; };
+		1A7623962758751800045152 /* ExpensesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7623952758751800045152 /* ExpensesList.swift */; };
+		1A7623992758802B00045152 /* BudgetDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7623982758802B00045152 /* BudgetDetailViewController.swift */; };
+		1A76239B2759233D00045152 /* ExpenseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A76239A2759233D00045152 /* ExpenseCell.swift */; };
 		1D07886C2746B06500F5E29E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D07886B2746B06500F5E29E /* MapViewController.swift */; };
 		322FD8F42741DD36004B9CAE /* ActivitesData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 322FD8F22741DD35004B9CAE /* ActivitesData.xcdatamodeld */; };
 		322FD8F62741DE58004B9CAE /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322FD8F52741DE58004B9CAE /* PersistenceController.swift */; };
@@ -82,6 +88,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A71B00D275A776900DC2FA0 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		1A762391275840F200045152 /* BudgetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetViewController.swift; sourceTree = "<group>"; };
+		1A7623932758514500045152 /* Expense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
+		1A7623952758751800045152 /* ExpensesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesList.swift; sourceTree = "<group>"; };
+		1A7623982758802B00045152 /* BudgetDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetDetailViewController.swift; sourceTree = "<group>"; };
+		1A76239A2759233D00045152 /* ExpenseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseCell.swift; sourceTree = "<group>"; };
 		1D07886B2746B06500F5E29E /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MapViewController.swift; path = BurlingtonViews/MapViewController.swift; sourceTree = "<group>"; };
 		322FD8F32741DD36004B9CAE /* ActivitesData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ActivitesData.xcdatamodel; sourceTree = "<group>"; };
 		322FD8F52741DE58004B9CAE /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
@@ -170,6 +182,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A76239727587B1000045152 /* BudgetView */ = {
+			isa = PBXGroup;
+			children = (
+				1A762391275840F200045152 /* BudgetViewController.swift */,
+				1A7623932758514500045152 /* Expense.swift */,
+				1A7623952758751800045152 /* ExpensesList.swift */,
+				1A7623982758802B00045152 /* BudgetDetailViewController.swift */,
+				1A76239A2759233D00045152 /* ExpenseCell.swift */,
+				1A71B00D275A776900DC2FA0 /* ListViewController.swift */,
+			);
+			path = BudgetView;
+			sourceTree = "<group>";
+		};
 		324D1BB5271873A200517B99 = {
 			isa = PBXGroup;
 			children = (
@@ -193,6 +218,7 @@
 		324D1BC0271873A300517B99 /* Trip Planner */ = {
 			isa = PBXGroup;
 			children = (
+				1A76239727587B1000045152 /* BudgetView */,
 				32DDD21B2752FB1200E57CA3 /* OrlandoViews */,
 				32DDD20C2752E06E00E57CA3 /* NewYorkCityViews */,
 				32DDD2092752D84000E57CA3 /* ChicagoViews */,
@@ -416,7 +442,6 @@
 				324D1BCE2718742900517B99 /* LaunchScreen.storyboard in Resources */,
 				324D1BFA271B3D8700517B99 /* Orlando.jpg in Resources */,
 				32DDD2062752CA5800E57CA3 /* BostonActivities.json in Resources */,
-				5220EB0A27208B1A00E8350A /* Schedule.storyboard in Resources */,
 				324D1BF8271B3D7C00517B99 /* New-York-City.jpg in Resources */,
 				32DDD20B2752D88100E57CA3 /* ChicagoActivities.json in Resources */,
 				325D4F7327320FEC00146788 /* BurlingtonActivities.json in Resources */,
@@ -451,15 +476,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A7623942758514500045152 /* Expense.swift in Sources */,
 				322FD8F42741DD36004B9CAE /* ActivitesData.xcdatamodeld in Sources */,
 				322FD8F62741DE58004B9CAE /* PersistenceController.swift in Sources */,
 				325D4F66272F35D600146788 /* ActivityList.swift in Sources */,
+				1A7623962758751800045152 /* ExpensesList.swift in Sources */,
 				32DDD22327530F1B00E57CA3 /* ChicagoActivity.swift in Sources */,
 				32DDD23F2753182500E57CA3 /* OrlandoModelActivities.swift in Sources */,
+				1A76239B2759233D00045152 /* ExpenseCell.swift in Sources */,
 				32DDD2352753145400E57CA3 /* NewYorkCityActivityRow.swift in Sources */,
 				32DDD21A2752F55F00E57CA3 /* BostonView.swift in Sources */,
 				5220EB102720930B00E8350A /* Schedule.swift in Sources */,
 				32DDD22727530F4A00E57CA3 /* ChicagoActivityDetail.swift in Sources */,
+				1A762392275840F200045152 /* BudgetViewController.swift in Sources */,
 				324D1BC6271873A400517B99 /* ViewController.swift in Sources */,
 				325D4F5B272F206F00146788 /* ActivityRow.swift in Sources */,
 				32DDD22F275313FF00E57CA3 /* NewYorkCityActivityList.swift in Sources */,
@@ -485,9 +514,11 @@
 				32DDD2102752EF2E00E57CA3 /* BostonActivityRow.swift in Sources */,
 				325D4F6A272F379500146788 /* BurlingtonView.swift in Sources */,
 				32DDD23D275317EC00E57CA3 /* OrlandoActivity.swift in Sources */,
+				1A71B00E275A776900DC2FA0 /* ListViewController.swift in Sources */,
 				32DDD22127530F0900E57CA3 /* ChicagoModelActivities.swift in Sources */,
 				32DDD2122752EF9300E57CA3 /* BostonModelActivities.swift in Sources */,
 				32DDD2312753142500E57CA3 /* NewYorkCityActivity.swift in Sources */,
+				1A7623992758802B00045152 /* BudgetDetailViewController.swift in Sources */,
 				1D07886C2746B06500F5E29E /* MapViewController.swift in Sources */,
 				5220EB0E27208F3B00E8350A /* ScheduleElement.swift in Sources */,
 				529C2866274C57DA00B6E2D3 /* EventItemCell.swift in Sources */,

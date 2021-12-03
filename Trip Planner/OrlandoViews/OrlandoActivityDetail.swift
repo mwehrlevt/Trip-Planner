@@ -41,6 +41,7 @@ struct OrlandoActivityDetail: View {
             DatePicker("Activity Date", selection: $activityDate, in: Date()...)
             Button("Add Activity") {
                 print("Added activity")
+                schedule.createEvent(name: self.activity.id, city: self.cityName, date: self.activityDate, cost: self.activity.cost)
             }
         }
     }

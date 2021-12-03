@@ -24,12 +24,7 @@ class Schedule {
             let data = try Data(contentsOf: eventArchiveURL)
             let unarchiver = PropertyListDecoder()
             let events = try unarchiver.decode([ScheduleElement].self, from: data)
-            if(events.isEmpty){
-                print(events)
-            } else {
-                schedule = events
-            }
-            
+            schedule = events
         } catch {
             print("Error while reading in scheduled events: \(error)")
         }
@@ -45,6 +40,8 @@ class Schedule {
         
         print("Added Event \(name)")
         
+        sortSchedule()
+        
         return newEvent
     }
     
@@ -52,6 +49,10 @@ class Schedule {
         if let index = schedule.firstIndex(of: event) {
             schedule.remove(at: index)
         }
+    }
+    
+    func sortSchedule(){
+        schedule = schedule.sorted(by: {$0.date < $1.date})
     }
     
     @objc func saveChanges() -> Bool {

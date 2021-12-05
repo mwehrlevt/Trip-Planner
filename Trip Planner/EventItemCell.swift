@@ -14,14 +14,12 @@ class EventItemCell: UITableViewCell {
             eventNameLabel.text = event?.name
             
             let dateFormatter = DateFormatter()
-            dateFormatter.dateFormat = "HH:mm"
+            dateFormatter.dateFormat = "MMM d, h:mm a"
             eventDateLabel.text = dateFormatter.string(for: event?.date)
             
             eventCostLabel.text = event?.cost
         }
     }
-    
-    
     
     let eventNameLabel : UILabel = {
         let label = UILabel()
@@ -59,6 +57,20 @@ class EventItemCell: UITableViewCell {
         
         topName.isActive = true
         leadingName.isActive = true
+        
+        eventDateLabel.translatesAutoresizingMaskIntoConstraints = false
+        let dateTop = eventDateLabel.topAnchor.constraint(equalTo: eventNameLabel.bottomAnchor, constant: 8)
+        let dateLeading = eventDateLabel.leadingAnchor.constraint(equalTo: eventNameLabel.leadingAnchor)
+        
+        dateTop.isActive = true
+        dateLeading.isActive = true
+        
+        eventCostLabel.translatesAutoresizingMaskIntoConstraints = false
+        let topCost = eventCostLabel.topAnchor.constraint(equalTo: topAnchor, constant: 24)
+        let trailingCost = eventCostLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -8)
+        
+        topCost.isActive = true
+        trailingCost.isActive = true
     }
     
     required init?(coder aDecoder:NSCoder){

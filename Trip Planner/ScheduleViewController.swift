@@ -65,7 +65,7 @@ class ScheduleViewController: UITableViewController {
         
         tableView.register(EventItemCell.self, forCellReuseIdentifier: cellId)
         
-        tableView.rowHeight = UITableView.automaticDimension
+        tableView.rowHeight = 65
         tableView.estimatedRowHeight = 65
     }
     
@@ -76,6 +76,7 @@ class ScheduleViewController: UITableViewController {
 
         myTableView.dataSource = self
         myTableView.delegate = self
+        
         
         myTableView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(myTableView)
@@ -93,5 +94,7 @@ class ScheduleViewController: UITableViewController {
         tableView.reloadData()
         
     }
+    
+    
     
 }

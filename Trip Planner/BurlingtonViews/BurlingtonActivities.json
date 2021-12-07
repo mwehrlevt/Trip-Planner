@@ -5,8 +5,8 @@
     "cost": "$25.00",
         "location": "6000 Shelburne Rd, Shelburne, VT 05482",
         "coordinates": {
-            "longitude": 44.3733,
-            "latitude": 73.2323
+            "longitude": -73.23211,
+            "latitude": 44.37343
         },
         "imageName": "shelburneMuseum"
     },
@@ -16,8 +16,8 @@
         "cost": "$$",
         "location": "60 Lake St, Burlington, VT 05401",
         "coordinates": {
-            "longitude": 44.477120,
-            "latitude": -73.219324
+            "longitude": -73.21951,
+            "latitude": 44.477710
         },
         "imageName": "skinnyPancake"
     },
@@ -27,8 +27,8 @@
         "cost": "Free",
         "location": "208 Flynn Ave, Burlington, VT 05401",
         "coordinates": {
-            "longitude": -135.334571,
-            "latitude": 59.560551
+            "longitude": -73.21684,
+            "latitude": 44.45585
         },
         "imageName": "filingCabinet"
     },
@@ -38,8 +38,8 @@
         "cost": "$",
         "location": "36 Church Street, Burlington, VT 05401",
         "coordinates": {
-            "longitude": -135.334571,
-            "latitude": 59.560551
+            "longitude": -73.21257,
+            "latitude": 44.47962
         },
         "imageName": "benAndJerrys"
     },
@@ -49,8 +49,8 @@
         "cost": "$5",
         "location": "1 College St, Burlington, VT 05401",
         "coordinates": {
-            "longitude": -135.334571,
-            "latitude": 59.560551
+            "longitude": -73.22084,
+            "latitude": 44.47677
         },
         "imageName": "echo"
     },
@@ -60,8 +60,8 @@
         "cost": "$10-30",
         "location": "216 Orchard Rd, Shelburne, VT 05482",
         "coordinates": {
-            "longitude": -135.334571,
-            "latitude": 59.560551
+            "longitude": -73.26550,
+            "latitude": 44.35215
         },
         "imageName": "shelburneOrchards"
     },
@@ -71,8 +71,8 @@
         "cost": "Free",
         "location": "1 College St, Burlington, VT 05401",
         "coordinates": {
-            "longitude": -135.334571,
-            "latitude": 59.560551
+            "longitude": -73.22092,
+            "latitude": 44.47780
         },
         "imageName": "greenway"
     },
@@ -82,8 +82,8 @@
         "cost": "$$",
         "location": "112 Lake St, Burlington, VT 05401",
         "coordinates": {
-            "longitude": -135.334571,
-            "latitude": 59.560551
+            "longitude": -73.22005,
+            "latitude": 44.47929
         },
         "imageName": "foamBrewers"
     },
@@ -93,8 +93,8 @@
         "cost": "Free",
         "location": "781 Blakely Rd, Colchester, VT 05446",
         "coordinates": {
-            "longitude": -135.334571,
-            "latitude": 59.560551
+            "longitude": -73.30103,
+            "latitude": 44.55588
         },
         "imageName": "colchesterCauseway"
     },
@@ -104,8 +104,8 @@
         "cost": "Free",
         "location": "1 North Ave, Burlington, VT 05401",
         "coordinates": {
-            "longitude": -135.334571,
-            "latitude": 59.560551
+            "longitude": -73.21989,
+            "latitude": 44.48153
         },
         "imageName": "batteryPark"
     },
@@ -115,8 +115,8 @@
         "cost": "$$",
         "location": "316 Pine St #144, Burlington, VT 05401",
         "coordinates": {
-            "longitude": -135.334571,
-            "latitude": 59.560551
+            "longitude": -73.21452,
+            "latitude": 44.47090
         },
         "imageName": "citizenCider"
     },
@@ -126,8 +126,8 @@
         "cost": "$4 per person",
         "location": "5425 Humphreys Rd, Charlotte, VT 05445",
         "coordinates": {
-            "longitude": -135.334571,
-            "latitude": 59.560551
+            "longitude": -73.21841,
+            "latitude": 44.27754
         },
         "imageName": "mountPhilo"
     },
@@ -137,8 +137,8 @@
         "cost": "$$",
         "location": "153 Main St, Burlington, VT 05401",
         "coordinates": {
-            "longitude": -135.334571,
-            "latitude": 59.560551
+            "longitude": -73.21312,
+            "latitude": 44.47586
         },
         "imageName": "flynn"
     },
@@ -148,8 +148,8 @@
         "cost": "$",
         "location": "345 Pine St, Burlington, VT 05401",
         "coordinates": {
-            "longitude": -135.334571,
-            "latitude": 59.560551
+            "longitude": -73.21541,
+            "latitude": 44.46964
         },
         "imageName": "farmersMarket"
     },
@@ -159,8 +159,8 @@
         "cost": "Free",
         "location": "135 Church St, Burlington, VT 05401",
         "coordinates": {
-            "longitude": -135.334571,
-            "latitude": 59.560551
+            "longitude": -73.21297,
+            "latitude": 44.47740
         },
         "imageName": "cityArtsCenter"
     }
